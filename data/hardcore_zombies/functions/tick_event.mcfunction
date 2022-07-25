@@ -13,8 +13,9 @@ execute as @e[tag=hcz.candidate,tag=!hcz.upgraded] run function hardcore_zombies
 execute as @e[tag=hcz.candidate,tag=!hcz.specialized] run function hardcore_zombies:specialize_zombie
 
 ## --= STOP EVENT PROGRESSION AT HALTING POINTS =--
-execute if score $halting_point hcz.variable matches 1.. unless score $is_halting_point hcz.variable matches 1 run function hardcore_zombies:trigger_halting_point
+execute if score $halting_point hcz.variable matches 1.. unless score $halting_point_began hcz.variable matches 1 run function hardcore_zombies:begin_halting_point
 
-## --= RENDER BOSS BAR FOR PLAYERS NEARBY NIGHT CASTER =--
-execute as @a at @s if score $is_halting_point hcz.variable matches 1 if entity @e[tag=hcz.night_caster,distance=..16] run bossbar set minecraft:hcz.night_caster_lives players @s
-execute as @a at @s if score $is_halting_point hcz.variable matches 1 unless entity @e[tag=hcz.night_caster,distance=..16] run bossbar set minecraft:hcz.night_caster_lives players
+## --= TICK HALTING POINT =--
+execute if score $halting_point hcz.variable matches 1.. at @a unless entity @e[tag=hcz.night_caster,distance=..16] run bossbar set minecraft:hcz.night_caster_lives players
+execute if score $halting_point hcz.variable matches 1.. as @a at @s if entity @e[tag=hcz.night_caster,distance=..16] run bossbar set minecraft:hcz.night_caster_lives players @s
+execute if score $halting_point hcz.variable matches 1.. run effect give @e[tag=hcz.night_caster] minecraft:glowing 10 0 true
