@@ -3,6 +3,6 @@
   "values": [
     "random:private/load",
     "entity_hit_matching:load",
-    "hardcore_zombies:load"
+    "hcz:load"
   ]
 }

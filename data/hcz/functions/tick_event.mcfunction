@@ -8,12 +8,12 @@ execute as @e[type=husk,nbt={IsBaby:0b},tag=!hcz.old] run tag @s add hcz.candida
 
 ## --= UPGRADE & SPECIALIZE CANDIDATES =--
 # Upgrades qualities of all candidates.
-execute as @e[tag=hcz.candidate,tag=!hcz.upgraded] run function hardcore_zombies:upgrade_zombie
+execute as @e[tag=hcz.candidate,tag=!hcz.upgraded] run function hcz:upgrade_zombie
 # Chooses random candidates to be given a class.
-execute as @e[tag=hcz.candidate,tag=!hcz.specialized] run function hardcore_zombies:specialize_zombie
+execute as @e[tag=hcz.candidate,tag=!hcz.specialized] run function hcz:specialize_zombie
 
 ## --= STOP EVENT PROGRESSION AT HALTING POINTS =--
-execute if score $halting_point hcz.variable matches 1.. unless score $halting_point_began hcz.variable matches 1 run function hardcore_zombies:begin_halting_point
+execute if score $halting_point hcz.variable matches 1.. unless score $halting_point_began hcz.variable matches 1 run function hcz:begin_halting_point
 
 ## --= TICK HALTING POINT =--
 execute if score $halting_point hcz.variable matches 1.. at @a unless entity @e[tag=hcz.night_caster,distance=..16] run bossbar set minecraft:hcz.night_caster_lives players

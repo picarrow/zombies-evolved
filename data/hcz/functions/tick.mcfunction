@@ -24,19 +24,19 @@ execute if score $is_event hcz.variable matches 0 run tag @e[type=drowned,nbt={I
 
 ## --= TICK EVENT =--
 # Ticks the event during the night of a new moon.
-execute if score $is_event hcz.variable matches 1 run function hardcore_zombies:tick_event
+execute if score $is_event hcz.variable matches 1 run function hcz:tick_event
 
 ## --= HANDLES CUSTOM SPAWN EGGS =--
-execute as @e[tag=hcz.night_caster,tag=!hcz.specialized] at @s run function hardcore_zombies:assign_night_caster
-execute as @e[tag=hcz.shrieker,tag=!hcz.specialized] at @s run function hardcore_zombies:assign_shrieker
+execute as @e[tag=hcz.night_caster,tag=!hcz.specialized] at @s run function hcz:night_caster/assign_class
+execute as @e[tag=hcz.shrieker,tag=!hcz.specialized] at @s run function hcz:shrieker/assign_class
 
 ## --= TICK SPECIAL ZOMBIE STATES =--
 # States of eligble zombies are ticked so that they can eventually finish.
-execute as @e[scores={hcz.night_caster_damage_timer=0..}] at @s run function hardcore_zombies:tick_night_caster_damage_state
-execute as @e[scores={hcz.shrieker_shriek_timer=0..}] at @s run function hardcore_zombies:tick_shrieker_shriek_state
+execute as @e[scores={hcz.night_caster_damage_timer=0..}] at @s run function hcz:night_caster/update_damage_state
+execute as @e[scores={hcz.shrieker_shriek_timer=0..}] at @s run function hcz:shrieker/update_shriek_state
 
 ## --= DISPOSE OF NIGHT CASTERS =--
 execute unless score $halting_point hcz.variable matches 1.. run kill @e[tag=hcz.night_caster,tag=!hcz.night_caster_ignore_death,nbt=!{PersistenceRequired:1b}]
 
 ## --= CHECK FOR SPECIAL ZOMBIE DEATHS =--
-execute as @e[type=item,tag=!item_identity_checked] at @s run function hardcore_zombies:check_item_identity
+execute as @e[type=item,tag=!item_identity_checked] at @s run function hcz:check_item_identity
