@@ -8,17 +8,10 @@ scoreboard players operation $moon_phase hcz.variable %= $8 hcz.constant
 execute store result score $day_time hcz.variable run time query daytime
 scoreboard players operation $day_time hcz.variable %= $23999 hcz.constant
 # $is_event
-execute if score $moon_phase hcz.variable matches ..3 run scoreboard players set $is_event hcz.variable 0
-execute if score $moon_phase hcz.variable matches 5.. run scoreboard players set $is_event hcz.variable 0
-execute if score $day_time hcz.variable matches ..12999 run scoreboard players set $is_event hcz.variable 0
-execute if score $day_time hcz.variable matches 23000.. run scoreboard players set $is_event hcz.variable 0
+scoreboard players set $is_event hcz.variable 0
 execute if score $moon_phase hcz.variable matches 4 if score $day_time hcz.variable matches 13000..22999 run scoreboard players set $is_event hcz.variable 1
 # $halting_point
-execute if score $is_event hcz.variable matches 0 run scoreboard players set $halting_point hcz.variable 0
-execute if score $day_time hcz.variable matches ..15499 run scoreboard players set $halting_point hcz.variable 0
-execute if score $day_time hcz.variable matches 15501..17999 run scoreboard players set $halting_point hcz.variable 0
-execute if score $day_time hcz.variable matches 18001..20499 run scoreboard players set $halting_point hcz.variable 0
-execute if score $day_time hcz.variable matches 20501.. run scoreboard players set $halting_point hcz.variable 0
+scoreboard players set $halting_point hcz.variable 0
 execute if score $is_event hcz.variable matches 1 if score $day_time hcz.variable matches 15500 run scoreboard players set $halting_point hcz.variable 1
 execute if score $is_event hcz.variable matches 1 if score $day_time hcz.variable matches 18000 run scoreboard players set $halting_point hcz.variable 2
 execute if score $is_event hcz.variable matches 1 if score $day_time hcz.variable matches 20500 run scoreboard players set $halting_point hcz.variable 3
