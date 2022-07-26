@@ -1,11 +1,12 @@
 ### AUTHOR: Picarrow
 
-# Attributes a random speed to the zombie.
-scoreboard players set $min random 230
-scoreboard players set $max random 345
-function random:uniform
-execute store result entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base double 0.001 run scoreboard players get $out random
-# Enables the zombie to pick up loot.
+#execute if data entity @s {IsBaby:0b} run function hcz:speed_up_zombie
 data merge entity @s {CanPickUpLoot:1b}
-# Tags the zombie with hcz.upgraded, so we know not to upgrade them again.
+
+scoreboard players set $min random 1
+scoreboard players set $max random 100
+function random:uniform
+execute if score $out random matches 1..10 if score $halting_point hcz.variable matches 1.. run tag @s add hcz.night_caster
+execute if score $out random matches 11 run tag @s add hcz.shrieker
+
 tag @s add hcz.upgraded
