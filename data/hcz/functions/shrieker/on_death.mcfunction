@@ -1,0 +1,3 @@
+### AUTHOR: Picarrow
+
+kill @s

@@ -1,8 +1,8 @@
-# AUTHOR: Crayola
-# ADAPTED BY: Picarrow
+### AUTHOR: Crayola
+### ADAPTED BY: Picarrow
 
-scoreboard players remove $dx hcz.variable 1
-execute if score $dx hcz.variable matches 0.. positioned ~1 ~ ~ run function hcz.dyntp:loop/x/positive
+scoreboard players remove #dy hcz.dyntp 1
+execute if score #dy hcz.dyntp matches 0.. positioned ~ ~1 ~ run function hcz.dyntp:loop/y/positive
 
-execute if score $dx hcz.variable matches -1 run tp @s ~ ~ ~
-scoreboard players reset $dx hcz.variable
+execute if score #dy hcz.dyntp matches -1 run tp @s ~ ~ ~
+scoreboard players reset #dy hcz.dyntp

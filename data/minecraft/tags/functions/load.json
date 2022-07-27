@@ -1,8 +1,9 @@
 {
   "replace": false,
   "values": [
-    "random:private/load",
-    "entity_hit_matching:load",
+    "hcz.random:private/load",
+    "hcz.entity_hit_matching:load",
+    "hcz.dyntp:load",
     "hcz:load"
   ]
 }

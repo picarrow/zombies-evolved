@@ -18,7 +18,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{hcz.NightCasterDeath:1b}"
+              "tag": "{hcz.ShriekerDeath:1b}"
             }
           ],
           "name": "minecraft:stick"

@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "entity_hit_matching:tick",
+    "hcz.entity_hit_matching:tick",
     "hcz:tick"
   ]
 }

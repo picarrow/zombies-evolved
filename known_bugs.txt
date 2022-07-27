@@ -1,2 +1,2 @@
 BUG: Spawning custom zombies with a renamed spawn egg does not copy the name over to the custom zombie.
-PRIORITY: Never
+PRIORITY: Low
