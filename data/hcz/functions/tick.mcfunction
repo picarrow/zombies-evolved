@@ -5,7 +5,7 @@
 execute if score $is_event hcz.variable matches 0 run tag @e[type=#hcz:zombies] add hcz.old
 
 ## --= HANDLES CUSTOM SPAWN EGGS =--
-execute as @e[tag=hcz.night_caster,tag=!hcz.specialized] at @s run function hcz:night_caster/assign_class
+execute as @e[tag=hcz.jacky,tag=!hcz.specialized] at @s run function hcz:jacky/assign_class
 execute as @e[tag=hcz.shrieker,tag=!hcz.specialized] at @s run function hcz:shrieker/assign_class
 
 ## --= HANDLES THE EVENT =--
@@ -23,7 +23,7 @@ execute if score $is_event hcz.variable matches 1 run function hcz:event/tick
 execute if score $is_event hcz.variable matches 0 run scoreboard players set $event_began hcz.variable 0
 
 ## --= PROGRESSES SPECIAL ZOMBIE STATES =--
-execute as @e[tag=hcz.night_caster] run function hcz:night_caster/tick
+execute as @e[tag=hcz.jacky] run function hcz:jacky/tick
 execute as @e[tag=hcz.shrieker] run function hcz:shrieker/tick
 
 ## --= CHECK FOR SPECIAL ZOMBIE DEATHS =--

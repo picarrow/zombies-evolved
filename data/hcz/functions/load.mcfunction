@@ -3,8 +3,8 @@
 ## --= VARIABLES =--
 # Variables for general purposes.
 scoreboard objectives add hcz.variable dummy
-# Variables for night casters
-scoreboard objectives add hcz.night_caster_damage_timer dummy
+# Variables for jackies
+scoreboard objectives add hcz.jacky_damage_timer dummy
 # Variables for shriekers
 scoreboard objectives add hcz.shrieker_shriek_timer dummy
 scoreboard objectives add hcz.shrieker_warning dummy
