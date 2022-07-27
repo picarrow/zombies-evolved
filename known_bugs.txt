@@ -1,2 +1,24 @@
+BUG: Baby shriekers emit shriek particles in the wrong place.
+PRIORITY: HIGH
+
+BUG: Baby swarmers emit fire and smoke particles in the wrong place.
+PRIORITY: HIGH
+
+BUG: Swarmers trail fire particles when they move.
+PRIORITY: Medium
+
+BUG: Jackies should be able to interact with other mobs the same way they interact with players. This includes knocking helmets, equipping the other mob with a carved pumpkin, and making hit and hurt noises.
+PRIORITY: Medium
+
+BUG: Zombies do not gradually increase speed when sky access is granted.
+PRIORITY: Medium
+
+BUG: Zombies do not gradually revert speed when sky access is taken away.
+PRIORITY: Medium
+
 BUG: Spawning custom zombies with a renamed spawn egg does not copy the name over to the custom zombie.
+PRIORITY: Low
+
+BUG: Zombies spawned from the zombie spawn egg aren't all regular zombies.
+SOLUTION: Replace all zombie spawn eggs in a player's inventory with a spawn egg that spawns a zombie with the hcz.old tag.
 PRIORITY: Low

@@ -131,3 +131,5 @@ scoreboard players operation @s hcz.entityid.31 = @s hcz.entityid
 scoreboard players operation @s hcz.entityid.31 %= 2 hcz.const
 
 scoreboard players operation @s hcz.entityid = $highest hcz.entityid
+
+function hcz.entity_hit_matching:assign_id1
