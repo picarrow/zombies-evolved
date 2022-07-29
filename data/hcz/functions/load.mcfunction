@@ -13,5 +13,8 @@ scoreboard objectives add hcz.shrieker_summoned_warden dummy
 ## --= CONSTANTS =--
 # Constant numbers used throughout the data pack.
 scoreboard objectives add hcz.constant dummy
-scoreboard players set $8 hcz.constant 8
-scoreboard players set $23999 hcz.constant 23999
+scoreboard players set #-1 hcz.constant -1
+scoreboard players set #2 hcz.constant 2
+scoreboard players set #8 hcz.constant 8
+scoreboard players set #10000 hcz.constant 10000
+scoreboard players set #23999 hcz.constant 23999

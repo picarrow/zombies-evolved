@@ -18,7 +18,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{hcz.SwarmerDeath:1b}"
+              "tag": "{hcz.BouncerDeath:1b}"
             }
           ],
           "name": "minecraft:stick"

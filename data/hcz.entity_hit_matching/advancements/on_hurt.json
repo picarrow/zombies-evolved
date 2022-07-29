@@ -10,6 +10,21 @@
         }
       }
     },
+    "is_bouncer": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"hcz.bouncer\"]}"
+            }
+          },
+          "source_entity": {
+            "nbt": "{Tags:[\"hcz.bouncer\"]}"
+          }
+        }
+      }
+    },
     "is_jacky": {
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
@@ -40,17 +55,17 @@
         }
       }
     },
-    "is_swarmer": {
+    "is_spawner": {
       "trigger": "minecraft:entity_hurt_player",
       "conditions": {
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"hcz.swarmer\"]}"
+              "nbt": "{Tags:[\"hcz.spawner\"]}"
             }
           },
           "source_entity": {
-            "nbt": "{Tags:[\"hcz.swarmer\"]}"
+            "nbt": "{Tags:[\"hcz.spawner\"]}"
           }
         }
       }
@@ -699,9 +714,10 @@
   "requirements": [
     [
       "target",
+      "is_bouncer",
       "is_jacky",
       "is_shrieker",
-      "is_swarmer"
+      "is_spawner"
     ],
     [
       "bit0",
