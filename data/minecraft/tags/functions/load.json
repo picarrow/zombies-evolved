@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "picarrow.math:_private/load",
     "hcz.random:private/load",
     "hcz.entity_hit_matching:load",
     "hcz:load"
