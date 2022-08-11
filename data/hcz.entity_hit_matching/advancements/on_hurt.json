@@ -16,11 +16,11 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"hcz.bouncer\"]}"
+              "nbt": "{Tags:[\"picarrow.hardcore_zombies.bouncer\"]}"
             }
           },
           "source_entity": {
-            "nbt": "{Tags:[\"hcz.bouncer\"]}"
+            "nbt": "{Tags:[\"picarrow.hardcore_zombies.bouncer\"]}"
           }
         }
       }
@@ -31,11 +31,11 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"hcz.jacky\"]}"
+              "nbt": "{Tags:[\"picarrow.hardcore_zombies.jacky\"]}"
             }
           },
           "source_entity": {
-            "nbt": "{Tags:[\"hcz.jacky\"]}"
+            "nbt": "{Tags:[\"picarrow.hardcore_zombies.jacky\"]}"
           }
         }
       }
@@ -46,11 +46,11 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"hcz.shrieker\"]}"
+              "nbt": "{Tags:[\"picarrow.hardcore_zombies.shrieker\"]}"
             }
           },
           "source_entity": {
-            "nbt": "{Tags:[\"hcz.shrieker\"]}"
+            "nbt": "{Tags:[\"picarrow.hardcore_zombies.shrieker\"]}"
           }
         }
       }
@@ -61,11 +61,11 @@
         "damage": {
           "type": {
             "direct_entity": {
-              "nbt": "{Tags:[\"hcz.spawner\"]}"
+              "nbt": "{Tags:[\"picarrow.hardcore_zombies.spawner\"]}"
             }
           },
           "source_entity": {
-            "nbt": "{Tags:[\"hcz.spawner\"]}"
+            "nbt": "{Tags:[\"picarrow.hardcore_zombies.spawner\"]}"
           }
         }
       }

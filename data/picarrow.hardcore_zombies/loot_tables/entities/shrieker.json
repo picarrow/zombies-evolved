@@ -18,7 +18,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{hcz.ShriekerDeath:1b}"
+              "tag": "{Picarrow.HardcoreZombies.ShriekerDeath:1b}"
             }
           ],
           "name": "minecraft:stick"

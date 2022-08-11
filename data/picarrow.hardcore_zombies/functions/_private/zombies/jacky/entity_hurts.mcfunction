@@ -1,3 +1,1 @@
-### AUTHOR: Picarrow
-
-scoreboard players set @s hcz.jacky_damage_timer 10
+scoreboard players set @s picarrow.hardcore_zombies.jacky_damage_timer 10

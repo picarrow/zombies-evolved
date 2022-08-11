@@ -18,7 +18,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{hcz.BouncerDeath:1b}"
+              "tag": "{Picarrow.HardcoreZombies.BouncerDeath:1b}"
             }
           ],
           "name": "minecraft:stick"

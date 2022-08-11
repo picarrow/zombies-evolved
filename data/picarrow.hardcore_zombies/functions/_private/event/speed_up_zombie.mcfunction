@@ -1,5 +1,3 @@
-### AUTHOR: Picarrow
-
 scoreboard players set $min hcz.random 230
 scoreboard players set $max hcz.random 345
 function hcz.random:true_uniform

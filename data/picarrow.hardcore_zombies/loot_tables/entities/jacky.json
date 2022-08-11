@@ -18,7 +18,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{hcz.JackyDeath:1b}"
+              "tag": "{Picarrow.HardcoreZombies.JackyDeath:1b}"
             }
           ],
           "name": "minecraft:stick"

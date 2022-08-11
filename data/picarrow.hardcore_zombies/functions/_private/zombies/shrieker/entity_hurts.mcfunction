@@ -1,3 +1,1 @@
-### AUTHOR: Picarrow
-
-scoreboard players set @s hcz.shrieker_shriek_timer 45
+scoreboard players set @s picarrow.hardcore_zombies.shrieker_shriek_timer 45
