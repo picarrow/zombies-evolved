@@ -6,7 +6,6 @@ scoreboard objectives add picarrow.hardcore_zombies.jacky_damage_timer dummy
 # Variables for shriekers
 scoreboard objectives add picarrow.hardcore_zombies.shrieker_shriek_timer dummy
 scoreboard objectives add picarrow.hardcore_zombies.shrieker_warning dummy
-scoreboard objectives add picarrow.hardcore_zombies.shrieker_summoned_warden dummy
 
 ## --= CONSTANTS =--
 # Constant numbers used throughout the data pack.

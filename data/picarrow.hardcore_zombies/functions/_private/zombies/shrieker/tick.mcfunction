@@ -1,1 +1,2 @@
-execute as @s at @s if score @s picarrow.hardcore_zombies.shrieker_shriek_timer matches 0.. run function picarrow.hardcore_zombies:_private/zombies/shrieker/update_shriek_state
+execute if score @s picarrow.hardcore_zombies.shrieker_shriek_timer matches 0.. run function picarrow.hardcore_zombies:_private/zombies/shrieker/states/shriek
+execute if entity @s[tag=picarrow.hardcore_zombies.shrieker_summoning_warden] unless entity @e[type=warden,distance=..24] if data entity @s {OnGround:1b} run function picarrow.hardcore_zombies:_private/zombies/shrieker/abilities/summon_warden
