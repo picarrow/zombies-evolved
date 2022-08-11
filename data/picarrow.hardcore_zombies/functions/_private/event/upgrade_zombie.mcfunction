@@ -1,7 +1,7 @@
 ### AUTHOR: Picarrow
 
 tag @s add hcz.upgraded
-execute if data entity @s {IsBaby:0b} run function picarrow.hardcore_zombies:speed_up_zombie
+execute if data entity @s {IsBaby:0b} run function picarrow.hardcore_zombies:_private/event/speed_up_zombie
 scoreboard players set $min hcz.random 1
 scoreboard players set $max hcz.random 100
 function hcz.random:true_uniform

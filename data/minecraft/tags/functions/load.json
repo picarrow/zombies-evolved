@@ -1,9 +1,9 @@
 {
   "replace": false,
   "values": [
-    "picarrow.math:_private/load",
     "hcz.random:private/load",
     "hcz.entity_hit_matching:load",
-    "picarrow.hardcore_zombies:load"
+    "picarrow.math:_private/load",
+    "picarrow.hardcore_zombies:_private/load"
   ]
 }
