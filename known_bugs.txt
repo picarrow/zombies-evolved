@@ -1,8 +1,8 @@
 BUG: Baby shriekers emit shriek particles in the wrong place.
-PRIORITY: HIGH
+PRIORITY: High
 
 BUG: Baby swarmers emit fire and smoke particles in the wrong place.
-PRIORITY: HIGH
+PRIORITY: High
 
 BUG: Swarmers trail fire particles when they move.
 PRIORITY: Medium
@@ -20,5 +20,5 @@ BUG: Spawning custom zombies with a renamed spawn egg does not copy the name ove
 PRIORITY: Low
 
 BUG: Zombies spawned from the zombie spawn egg aren't all regular zombies.
-SOLUTION: Replace all zombie spawn eggs in a player's inventory with a spawn egg that spawns a zombie with the hcz.old tag.
+SOLUTION: Replace all zombie spawn eggs in a player's inventory with a spawn egg that spawns a zombie with the picarrow.hardcore_zombies.old tag.
 PRIORITY: Low
