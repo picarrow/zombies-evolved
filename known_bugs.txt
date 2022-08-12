@@ -1,10 +1,7 @@
 BUG: Baby shriekers emit shriek particles in the wrong place.
 PRIORITY: High
 
-BUG: Baby swarmers emit fire and smoke particles in the wrong place.
-PRIORITY: High
-
-BUG: Swarmers trail fire particles when they move.
+BUG: Spawners trail fire particles when they move.
 PRIORITY: Medium
 
 BUG: Jackies should be able to interact with other mobs the same way they interact with players. This includes knocking helmets, equipping the other mob with a carved pumpkin, and making hit and hurt noises.

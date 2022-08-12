@@ -1,2 +1,8 @@
-execute if entity @a[distance=..16] run particle minecraft:flame ~ ~1.75 ~ 0.1 0.1 0.1 0.001 1 normal
-execute if entity @a[distance=..16] run particle minecraft:smoke ~ ~1.75 ~ 0.1 0.1 0.1 0.001 1 normal
+execute if entity @a[distance=..16] if entity @s[type=minecraft:zombie] unless predicate picarrow.hardcore_zombies:is_baby positioned ~ ~1.75 ~ run function picarrow.hardcore_zombies:_private/zombies/spawner/abilities/emit_adult_head_particles
+execute if entity @a[distance=..16] if entity @s[type=minecraft:zombie] if predicate picarrow.hardcore_zombies:is_baby positioned ~ ~0.9375 ~ run function picarrow.hardcore_zombies:_private/zombies/spawner/abilities/emit_baby_head_particles
+execute if entity @a[distance=..16] if entity @s[type=minecraft:zombie_villager] unless predicate picarrow.hardcore_zombies:is_baby positioned ~ ~1.875 ~ run function picarrow.hardcore_zombies:_private/zombies/spawner/abilities/emit_adult_head_particles
+execute if entity @a[distance=..16] if entity @s[type=minecraft:zombie_villager] if predicate picarrow.hardcore_zombies:is_baby positioned ~ ~1 ~ run function picarrow.hardcore_zombies:_private/zombies/spawner/abilities/emit_baby_head_particles
+execute if entity @a[distance=..16] if entity @s[type=minecraft:husk] unless predicate picarrow.hardcore_zombies:is_baby positioned ~ ~1.875 ~ run function picarrow.hardcore_zombies:_private/zombies/spawner/abilities/emit_adult_head_particles
+execute if entity @a[distance=..16] if entity @s[type=minecraft:husk] if predicate picarrow.hardcore_zombies:is_baby positioned ~ ~1 ~ run function picarrow.hardcore_zombies:_private/zombies/spawner/abilities/emit_baby_head_particles
+execute if entity @a[distance=..16] if entity @s[type=minecraft:drowned] unless predicate picarrow.hardcore_zombies:is_baby positioned ~ ~1.75 ~ run function picarrow.hardcore_zombies:_private/zombies/spawner/abilities/emit_adult_head_particles
+execute if entity @a[distance=..16] if entity @s[type=minecraft:drowned] if predicate picarrow.hardcore_zombies:is_baby positioned ~ ~0.9375 ~ run function picarrow.hardcore_zombies:_private/zombies/spawner/abilities/emit_baby_head_particles

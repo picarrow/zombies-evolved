@@ -3,7 +3,7 @@
   "values": [
     "minecraft:zombie",
     "minecraft:zombie_villager",
-    "minecraft:drowned",
-    "minecraft:husk"
+    "minecraft:husk",
+    "minecraft:drowned"
   ]
 }

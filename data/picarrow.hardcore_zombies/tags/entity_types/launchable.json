@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "minecraft:cave_spider",
     "minecraft:creeper",
     "minecraft:drowned",
     "minecraft:endermite",
