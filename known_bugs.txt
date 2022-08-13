@@ -1,6 +1,3 @@
-BUG: Baby shriekers emit shriek particles in the wrong place.
-PRIORITY: High
-
 BUG: Spawners trail fire particles when they move.
 PRIORITY: Medium
 

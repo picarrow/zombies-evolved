@@ -1,6 +1,2 @@
-execute if entity @s[type=minecraft:zombie,predicate=!picarrow.hardcore_zombies:is_baby] if entity @a[distance=..16] positioned ~ ~1.75 ~ run function picarrow.hardcore_zombies:_private/zombies/spawner/abilities/emit_adult_head_particles
-execute if entity @s[type=minecraft:zombie,predicate=picarrow.hardcore_zombies:is_baby] if entity @a[distance=..16] positioned ~ ~0.9375 ~ run function picarrow.hardcore_zombies:_private/zombies/spawner/abilities/emit_baby_head_particles
-execute if entity @s[type=minecraft:husk,predicate=!picarrow.hardcore_zombies:is_baby] if entity @a[distance=..16] positioned ~ ~1.875 ~ run function picarrow.hardcore_zombies:_private/zombies/spawner/abilities/emit_adult_head_particles
-execute if entity @s[type=minecraft:husk,predicate=picarrow.hardcore_zombies:is_baby] if entity @a[distance=..16] positioned ~ ~1 ~ run function picarrow.hardcore_zombies:_private/zombies/spawner/abilities/emit_baby_head_particles
-execute if entity @s[type=minecraft:drowned,predicate=!picarrow.hardcore_zombies:is_baby] if entity @a[distance=..16] positioned ~ ~1.75 ~ run function picarrow.hardcore_zombies:_private/zombies/spawner/abilities/emit_adult_head_particles
-execute if entity @s[type=minecraft:drowned,predicate=picarrow.hardcore_zombies:is_baby] if entity @a[distance=..16] positioned ~ ~0.9375 ~ run function picarrow.hardcore_zombies:_private/zombies/spawner/abilities/emit_baby_head_particles
+function picarrow.hardcore_zombies:_private/zombies/spawner/states/ember
+function picarrow.hardcore_zombies:_private/zombies/spawner/abilities/emit_smoke
