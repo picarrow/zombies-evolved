@@ -1,9 +1,8 @@
 {
   "replace": false,
   "values": [
-    "hcz.random:private/load",
-    "hcz.entity_hit_matching:load",
-    "picarrow.math:_private/load",
-    "picarrow.hardcore_zombies:_private/load"
+    "aeldrion.random:private/load",
+    "cloudwolf.entity_hit_matching:load",
+    "picarrow.zombies_evolved:_private/load"
   ]
 }
