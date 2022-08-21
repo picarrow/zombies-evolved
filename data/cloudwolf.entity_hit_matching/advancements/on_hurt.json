@@ -10,6 +10,21 @@
         }
       }
     },
+    "is_jacky": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"picarrow.ze.jacky\"]}"
+            }
+          },
+          "source_entity": {
+            "nbt": "{Tags:[\"picarrow.ze.jacky\"]}"
+          }
+        }
+      }
+    },
     "bit0": {
       "trigger": "minecraft:entity_hurt_player",
         "conditions": {
@@ -653,7 +668,8 @@
   },
   "requirements": [
     [
-      "target"
+      "target",
+      "is_jacky"
     ],
     [
       "bit0",

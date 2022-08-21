@@ -4,6 +4,9 @@ scoreboard players set $sea_level picarrow.ze.config 62
 
 scoreboard objectives add picarrow.ze.variable dummy
 
+# Jackies
+scoreboard objectives add picarrow.ze.jacky_lit_timer dummy
+
 # Shriekers
 scoreboard objectives add picarrow.ze.shrieker_shriek_timer dummy
 scoreboard objectives add picarrow.ze.shrieker_warning dummy
