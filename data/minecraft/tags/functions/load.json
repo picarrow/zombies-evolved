@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     "aeldrion.random:private/load",
-    "cloudwolf.entity_hit_matching:load",
+    "picarrow.entity_hit_matching:load",
     "picarrow.zombies_evolved:_private/load"
   ]
 }

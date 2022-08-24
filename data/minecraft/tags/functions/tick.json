@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "cloudwolf.entity_hit_matching:tick",
+    "picarrow.entity_hit_matching:tick",
     "picarrow.zombies_evolved:_private/tick"
   ]
 }
