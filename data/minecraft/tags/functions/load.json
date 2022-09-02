@@ -3,6 +3,6 @@
   "values": [
     "aeldrion.random:private/load",
     "picarrow.entity_hit_matching:load",
-    "picarrow.zombies_evolved:_private/load"
+    "picarrow.zombies_evolved:load"
   ]
 }
