@@ -7,3 +7,5 @@ scoreboard players set $sea_level picarrow.ze._ 62
 scoreboard objectives add picarrow.ze.jacky.lit dummy
 scoreboard objectives add picarrow.ze.shrieker.shriek dummy
 scoreboard objectives add picarrow.ze.shrieker.warning dummy
+
+scoreboard objectives add picarrow.ze._pilfer dummy
