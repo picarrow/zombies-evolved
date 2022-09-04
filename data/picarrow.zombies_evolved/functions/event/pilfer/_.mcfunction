@@ -1,12 +1,19 @@
-data modify storage picarrow.zombies_evolved:_pilfer.0 Inventory set from entity @s Inventory
-data modify storage picarrow.zombies_evolved:_pilfer.0 SelectedItem set from entity @s SelectedItem
+scoreboard objectives add picarrow.ze._pilfer.0 dummy
 
-scoreboard players set #items picarrow.ze._pilfer 6
-scoreboard players reset #i picarrow.ze._pilfer
-function picarrow.zombies_evolved:event/pilfer/summon_grab_bag
-scoreboard players reset #i picarrow.ze._pilfer
-execute as @e[type=minecraft:marker,tag=picarrow.ze._pilfer,distance=..0.1] store result score @s picarrow.ze._pilfer run scoreboard players add #i picarrow.ze._pilfer 1
-execute as @e[type=minecraft:marker,tag=picarrow.ze._pilfer,distance=..0.1,sort=random] run function picarrow.zombies_evolved:event/pilfer/process_item
+data modify storage picarrow.zombies_evolved:_pilfer.0 Temp set from entity @s {}
+data modify storage picarrow.zombies_evolved:_pilfer.0 GrabBag append from storage picarrow.zombies_evolved:_pilfer.0 Temp.Inventory[{Slot:100b}]
+data modify storage picarrow.zombies_evolved:_pilfer.0 GrabBag append from storage picarrow.zombies_evolved:_pilfer.0 Temp.Inventory[{Slot:101b}]
+data modify storage picarrow.zombies_evolved:_pilfer.0 GrabBag append from storage picarrow.zombies_evolved:_pilfer.0 Temp.Inventory[{Slot:102b}]
+data modify storage picarrow.zombies_evolved:_pilfer.0 GrabBag append from storage picarrow.zombies_evolved:_pilfer.0 Temp.Inventory[{Slot:103b}]
+data modify storage picarrow.zombies_evolved:_pilfer.0 GrabBag append from storage picarrow.zombies_evolved:_pilfer.0 Temp.Inventory[{Slot:-106b}]
+data modify storage picarrow.zombies_evolved:_pilfer.0 GrabBag append from storage picarrow.zombies_evolved:_pilfer.0 Temp.SelectedItem
 
-execute unless data storage picarrow.zombies_evolved:_pilfer.1 Item run function picarrow.zombies_evolved:event/pilfer/else
-execute if data storage picarrow.zombies_evolved:_pilfer.1 Item run function picarrow.zombies_evolved:event/pilfer/drop_item
+execute unless data storage picarrow.zombies_evolved:_pilfer.0 GrabBag if data storage picarrow.zombies_evolved:_pilfer.0 Temp.Inventory[0] run function picarrow.zombies_evolved:event/pilfer/take_unequipped
+execute if data storage picarrow.zombies_evolved:_pilfer.0 GrabBag run function picarrow.zombies_evolved:event/pilfer/take_equipped
+data remove storage picarrow.zombies_evolved:_pilfer.0 Temp
+
+execute if data storage picarrow.zombies_evolved:_pilfer.0 PilferedItem run function picarrow.zombies_evolved:event/pilfer/drop_item
+
+scoreboard objectives remove picarrow.ze._pilfer.0
+
+#tellraw @a {"storage":"picarrow.zombies_evolved:_pilfer.0","nbt":"{}"}
