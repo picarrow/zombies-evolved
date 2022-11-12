@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "picarrow.entity_hit_matching:tick",
-    "picarrow.zombies_evolved:tick"
+    "entity_hit_matching:tick",
+    "zombies_evolved:tick"
   ]
 }

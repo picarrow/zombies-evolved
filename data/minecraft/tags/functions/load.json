@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "aeldrion.random:private/load",
-    "picarrow.entity_hit_matching:load",
-    "picarrow.zombies_evolved:load"
+    "random:private/load",
+    "entity_hit_matching:load",
+    "zombies_evolved:load"
   ]
 }
