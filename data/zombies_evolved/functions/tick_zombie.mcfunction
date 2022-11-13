@@ -1,7 +1,7 @@
 ## AUTHOR: Picarrow
 
 # Specializes plain zombies
-execute if entity @s[tag=!zev.specialized,tag=!zev.artificial] run function zombies_evolved:_specialize/_
+execute if entity @s[tag=!zev.specialized,tag=!zev.artificial] run function zombies_evolved:specialize
 
 # Ticks special zombies
 execute if entity @s[tag=zev.jacky] run function zombies_evolved:jacky/tick
