@@ -7,11 +7,11 @@ execute store result storage zombies_evolved:_find_stalac_point Height int 1 run
 
 # valid
 data merge storage zombies_evolved:_find_stalac_point {Valid:0b}
-execute at @s if block ~ ~ ~ #zombies_evolved:stalac_base run data merge storage zombies_evolved:_find_stalac_point {Valid:1b}
+execute at @s if block ~ ~ ~ #zombies_evolved:stalac_base unless entity @e[dy=-1,type=#zombies_evolved:targets,tag=zev.stalac.hanging] run data merge storage zombies_evolved:_find_stalac_point {Valid:1b}
 
-# universal
-data merge storage zombies_evolved:_find_stalac_point {Universal:0b}
-execute at @s if block ~ ~ ~ minecraft:dripstone_block run data merge storage zombies_evolved:_find_stalac_point {Universal:1b}
+# habitat
+data merge storage zombies_evolved:_find_stalac_point {Habitat:0b}
+execute at @s if block ~ ~ ~ minecraft:dripstone_block run data merge storage zombies_evolved:_find_stalac_point {Habitat:1b}
 
 # spawn point
 execute at @s run tp @s ~ ~-0.00001 ~

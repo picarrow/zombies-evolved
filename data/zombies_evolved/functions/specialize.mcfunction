@@ -12,10 +12,10 @@ execute if score #y zev._ <= $sea_level zev._ unless entity @s[type=minecraft:dr
 function zombies_evolved:_find_stalac_point/_
 execute store result score #height zev._ run data get storage zombies_evolved:_find_stalac_point Height
 execute store result score #valid zev._ run data get storage zombies_evolved:_find_stalac_point Valid
-execute store result score #universal zev._ run data get storage zombies_evolved:_find_stalac_point Universal
+execute store result score #habitat zev._ run data get storage zombies_evolved:_find_stalac_point Habitat
 
-execute unless predicate zombies_evolved:in_dripstone_caves if score #universal zev._ matches 1 if score #height zev._ matches 8..32 run scoreboard players set #stalac_avail zev._ 1
-execute if predicate zombies_evolved:in_dripstone_caves if score #valid zev._ matches 1 if score #height zev._ matches 8..32 run scoreboard players set #stalac_avail zev._ 1
+execute if score #valid zev._ matches 1 if score #height zev._ matches 8..32 if score #habitat zev._ matches 1 run scoreboard players set #stalac_avail zev._ 1
+execute if score #stalac_avail zev._ matches 0 if predicate zombies_evolved:in_dripstone_caves if score #valid zev._ matches 1 if score #height zev._ matches 8..32 run scoreboard players set #stalac_avail zev._ 1
 
 # Bleh
 scoreboard players set $min rdm.random 1
