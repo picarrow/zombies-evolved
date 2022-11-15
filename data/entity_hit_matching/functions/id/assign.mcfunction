@@ -1,136 +1,57 @@
 ## AUTHOR: Picarrow, CloudWolf, nphhpn
 
+# Attempts to remove old id tags from the executor
+function entity_hit_matching:id/remove_tags
+
 # Assigns a new id to the executor
 scoreboard players add #new_id ehm._ 1
+execute if score #new_id ehm._ matches 19683.. run function entity_hit_matching:refresh_ids
 scoreboard players operation @s ehm._ = #new_id ehm._
 
-# Appends tags representing the binary representation of its id to the executor
+# Appends tags representing the ternary representation of its id to the executor
 scoreboard players operation #temp_id ehm._ = #new_id ehm._
 
 function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.00_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.00_1
+execute if score #bit ehm._ matches 0 run tag @s add ehm.0_0
+execute if score #bit ehm._ matches 1 run tag @s add ehm.0_1
+execute if score #bit ehm._ matches 2 run tag @s add ehm.0_2
 
 function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.01_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.01_1
+execute if score #bit ehm._ matches 0 run tag @s add ehm.1_0
+execute if score #bit ehm._ matches 1 run tag @s add ehm.1_1
+execute if score #bit ehm._ matches 2 run tag @s add ehm.1_2
 
 function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.02_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.02_1
+execute if score #bit ehm._ matches 0 run tag @s add ehm.2_0
+execute if score #bit ehm._ matches 1 run tag @s add ehm.2_1
+execute if score #bit ehm._ matches 2 run tag @s add ehm.2_2
 
 function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.03_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.03_1
+execute if score #bit ehm._ matches 0 run tag @s add ehm.3_0
+execute if score #bit ehm._ matches 1 run tag @s add ehm.3_1
+execute if score #bit ehm._ matches 2 run tag @s add ehm.3_2
 
 function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.04_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.04_1
+execute if score #bit ehm._ matches 0 run tag @s add ehm.4_0
+execute if score #bit ehm._ matches 1 run tag @s add ehm.4_1
+execute if score #bit ehm._ matches 2 run tag @s add ehm.4_2
 
 function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.05_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.05_1
+execute if score #bit ehm._ matches 0 run tag @s add ehm.5_0
+execute if score #bit ehm._ matches 1 run tag @s add ehm.5_1
+execute if score #bit ehm._ matches 2 run tag @s add ehm.5_2
 
 function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.06_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.06_1
+execute if score #bit ehm._ matches 0 run tag @s add ehm.6_0
+execute if score #bit ehm._ matches 1 run tag @s add ehm.6_1
+execute if score #bit ehm._ matches 2 run tag @s add ehm.6_2
 
 function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.07_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.07_1
+execute if score #bit ehm._ matches 0 run tag @s add ehm.7_0
+execute if score #bit ehm._ matches 1 run tag @s add ehm.7_1
+execute if score #bit ehm._ matches 2 run tag @s add ehm.7_2
 
 function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.08_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.08_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.09_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.09_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.10_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.10_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.11_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.11_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.12_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.12_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.13_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.13_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.14_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.14_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.15_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.15_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.16_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.16_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.17_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.17_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.18_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.18_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.19_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.19_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.20_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.20_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.21_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.21_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.22_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.22_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.23_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.23_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.24_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.24_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.25_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.25_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.26_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.26_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.27_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.27_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.28_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.28_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.29_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.29_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.30_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.30_1
-
-function entity_hit_matching:next_bit
-execute if score #bit ehm._ matches 0 run tag @s add ehm.31_0
-execute if score #bit ehm._ matches 1 run tag @s add ehm.31_1
+execute if score #bit ehm._ matches 0 run tag @s add ehm.8_0
+execute if score #bit ehm._ matches 1 run tag @s add ehm.8_1
+execute if score #bit ehm._ matches 2 run tag @s add ehm.8_2
