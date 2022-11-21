@@ -3,6 +3,7 @@
   "values": [
     "air",
     "cave_air",
+    "structure_void",
     "water"
   ]
 }
