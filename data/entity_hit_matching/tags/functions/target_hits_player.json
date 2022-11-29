@@ -1,0 +1,6 @@
+{
+  "replace": false,
+  "values": [
+    "zombies_evolved:event/target_hits_player"
+  ]
+}
