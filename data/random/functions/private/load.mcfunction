@@ -13,11 +13,11 @@
 #define storage random:data
 
 # Create scoreboard objective and initialise LCG
-scoreboard objectives add rdm.random dummy
-execute unless score #lcg rdm.random = #lcg rdm.random store result score #lcg rdm.random run seed
+scoreboard objectives add rdm._ dummy
+execute unless score #lcg rdm._ = #lcg rdm._ store result score #lcg rdm._ run seed
 
 # Define constants
-scoreboard players set #8 rdm.random 8
-scoreboard players set #lcg_a rdm.random 1630111353
-scoreboard players set #lcg_c rdm.random 1623164762
-scoreboard players set #lcg_m rdm.random 2147483647
+scoreboard players set #8 rdm._ 8
+scoreboard players set #lcg_a rdm._ 1630111353
+scoreboard players set #lcg_c rdm._ 1623164762
+scoreboard players set #lcg_m rdm._ 2147483647

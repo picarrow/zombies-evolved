@@ -9,9 +9,9 @@
 # @winthin random:private/true_uniform_loop
 
 # Xn+1 = (aXn + c) mod m
-scoreboard players operation #lcg rdm.random *= #lcg_a rdm.random
-scoreboard players operation #lcg rdm.random += #lcg_c rdm.random
-scoreboard players operation #lcg rdm.random %= #lcg_m rdm.random
+scoreboard players operation #lcg rdm._ *= #lcg_a rdm._
+scoreboard players operation #lcg rdm._ += #lcg_c rdm._
+scoreboard players operation #lcg rdm._ %= #lcg_m rdm._
 
 # Loop if necessary
-execute if score #lcg rdm.random >= #max rdm.random run function random:private/true_uniform_loop
+execute if score #lcg rdm._ >= #max rdm._ run function random:private/true_uniform_loop

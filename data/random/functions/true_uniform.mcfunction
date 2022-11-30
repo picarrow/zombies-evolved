@@ -16,19 +16,19 @@
 #		An integer in range [min, max]
 
 # Calculate size of range
-scoreboard players operation #size rdm.random = $max rdm.random
-scoreboard players operation #size rdm.random -= $min rdm.random
-scoreboard players add #size rdm.random 1
+scoreboard players operation #size rdm._ = $max rdm._
+scoreboard players operation #size rdm._ -= $min rdm._
+scoreboard players add #size rdm._ 1
 
 # Calculate maximum authorised value
-scoreboard players set #max rdm.random 2147483647
-scoreboard players operation #max rdm.random /= #size rdm.random
-scoreboard players operation #max rdm.random *= #size rdm.random
+scoreboard players set #max rdm._ 2147483647
+scoreboard players operation #max rdm._ /= #size rdm._
+scoreboard players operation #max rdm._ *= #size rdm._
 
 # Loop
 function random:private/true_uniform_loop
-scoreboard players operation $out rdm.random = #lcg rdm.random
+scoreboard players operation $out rdm._ = #lcg rdm._
 
 # Get within desired range
-scoreboard players operation $out rdm.random %= #size rdm.random
-scoreboard players operation $out rdm.random += $min rdm.random
+scoreboard players operation $out rdm._ %= #size rdm._
+scoreboard players operation $out rdm._ += $min rdm._
