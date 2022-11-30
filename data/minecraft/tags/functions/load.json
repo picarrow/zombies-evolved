@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "reltp:load",
     "random:private/load",
     "entity_hit_matching:load",
     "zombies_evolved:load"
