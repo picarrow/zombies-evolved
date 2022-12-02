@@ -1,4 +1,4 @@
 ## AUTHOR: Picarrow
 
-# This objective tracks the settings, along with variables and constants
+# This objective tracks temporary variables
 scoreboard objectives add rtp._ dummy
