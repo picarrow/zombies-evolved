@@ -8,7 +8,7 @@ execute store result storage zombies_evolved:find_hang_point Height int 1 run sc
 
 # valid
 data merge storage zombies_evolved:find_hang_point {Valid:0b}
-execute at @s if block ~ ~ ~ #zombies_evolved:stalac_base align xz unless entity @e[dy=-1,type=#zombies_evolved:targets,tag=zev.stalac.hanging] run data merge storage zombies_evolved:find_hang_point {Valid:1b}
+execute at @s if block ~ ~ ~ #zombies_evolved:stalac_hangable align xz unless entity @e[dy=-1,type=#zombies_evolved:targets,tag=zev.stalac.hanging] run data merge storage zombies_evolved:find_hang_point {Valid:1b}
 
 # habitat
 data merge storage zombies_evolved:find_hang_point {Habitat:0b}
