@@ -2,7 +2,7 @@
 
 # Computes the position to send the executor to
 # - Establish origin
-#   When tag relative is set to 1b, use the position of the executor, rather than the world spawn
+#   When tag relative is set to 1b, uses the position of the executor, rather than the world spawn
 execute unless data storage reltp:args {relative:1b} run data modify storage reltp:_temp temp.pos set value [0d,0d,0d]
 execute if data storage reltp:args {relative:1b} run data modify storage reltp:_temp temp.pos set from entity @s Pos
 # - Offset from origin
