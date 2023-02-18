@@ -29,5 +29,5 @@ execute unless score #_height zev._ matches -1 run data modify storage zombies_e
 data merge storage zombies_evolved:find_hang_point {habitat:0b}
 execute positioned as @s if block ~ ~ ~ minecraft:dripstone_block run data merge storage zombies_evolved:find_hang_point {habitat:1b}
 
-# Disposes of the helper
+# Destroys the helper entity
 kill @s
