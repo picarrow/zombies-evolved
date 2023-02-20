@@ -1,7 +1,5 @@
 ## AUTHOR: Picarrow
 # To Do
-# - Choose the correct value for #_dy in the successful check
-# - Choose the correct value for #_dy in spawn_helpers_4 looping check
 # - Ensure that two stalactites can't spawn in the same place
 # - Ensure that stalactites have 3 blocks of space underneath them to fall
 # - Ensure that stalactites can't become a block
