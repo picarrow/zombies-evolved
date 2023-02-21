@@ -1,12 +1,12 @@
 ## AUTHOR: Picarrow
 
-data merge storage reltp:args {relative:1b,offset:[0d,-1d,0d]}
+data merge storage reltp:args {relative:1b,offset:[0d,-4d,0d]}
 execute store result storage reltp:args offset[0] double 1 run scoreboard players get #_dx zev._
 execute store result storage reltp:args offset[2] double 1 run scoreboard players get #_dz zev._
 function reltp:_/teleport
 
 # dy
-scoreboard players set #_dy zev._ -1
+scoreboard players set #_dy zev._ -4
 execute positioned as @s run function zombies_evolved:stalac/crumble/spawn_helpers_2
 
 # if dy and the originating block is valid, succeed otherwise kill
