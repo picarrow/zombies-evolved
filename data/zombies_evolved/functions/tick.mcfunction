@@ -5,3 +5,6 @@ execute as @e[type=#zombies_evolved:targets] at @s run function zombies_evolved:
 
 # Ticks crumble helpers
 execute as @e[type=minecraft:marker,tag=zev.crumble_helper] at @s run function zombies_evolved:crumble_helper/tick
+
+# Ticks arrows
+execute as @e[type=minecraft:arrow] at @s run function zombies_evolved:arrow/tick
