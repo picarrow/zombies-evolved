@@ -1,6 +1,8 @@
 ## AUTHOR: Picarrow
 
-scoreboard players set $min rdm._ 3
+# 7.353% - 10.294% occupation of positions
+# Assuming they are all valid
+scoreboard players set $min rdm._ 5
 scoreboard players set $max rdm._ 7
 function random:true_uniform
 scoreboard players operation #_max_stalactites zev._ = $out rdm._
@@ -12,6 +14,3 @@ function zombies_evolved:stalac/crumble/spawn_helpers
 
 data remove storage zombies_evolved:0 selected_position
 data remove storage zombies_evolved:0 positions
-
-# tellraw @a ["Stalactites: ",{"score":{"name":"#_num_stalactites","objective":"zev._"}}]
-# tellraw @a ["Attempts: ",{"score":{"name":"#_attempts","objective":"zev._"}}]
