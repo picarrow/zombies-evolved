@@ -152,11 +152,11 @@ execute store result score #_dz zev._ run data get storage zombies_evolved:0 sel
 # if dx and dz are valid, proceed
 scoreboard players set #is_invalid zev._ 0
 execute store success score #_is_invalid zev._ if score #_dx zev._ matches 0 if score #_dz zev._ matches 0
-execute if score #_is_invalid zev._ matches 0 summon minecraft:marker run function zombies_evolved:stalac/crumble/spawn_helpers_1
+execute if score #_is_invalid zev._ matches 0 summon minecraft:marker run function zombies_evolved:stalac/crumble/spawn_guiders_1
 
 # Continues to attempt stalactite spawns if:
 # * The max number of attempts hasn't been exceeded
 # * The max number of stalactites hasn't been reached
 # * There are still positions left to place stalactites
 scoreboard players add #_attempts zev._ 1
-execute if score #_attempts zev._ matches ..19 if score #_num_stalactites zev._ < #_max_stalactites zev._ if data storage zombies_evolved:0 positions[] run function zombies_evolved:stalac/crumble/spawn_helpers
+execute if score #_attempts zev._ matches ..19 if score #_num_stalactites zev._ < #_max_stalactites zev._ if data storage zombies_evolved:0 positions[] run function zombies_evolved:stalac/crumble/spawn_guiders

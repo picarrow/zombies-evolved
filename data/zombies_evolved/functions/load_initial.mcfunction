@@ -9,8 +9,8 @@ scoreboard objectives add zev.shrieker.shriek_time dummy
 scoreboard objectives add zev.shrieker.warning dummy
 scoreboard objectives add zev.stalac.phase_time dummy
 
-# This objective tracks scores relating to crumble helpers
-scoreboard objectives add zev.crumble_helper.age dummy
+# This objective tracks scores relating to crumble guiders
+scoreboard objectives add zev.crumble_guider.age dummy
 
 # This objective tracks scores relating to arrows
 scoreboard objectives add zev.arrow.bow_id dummy
