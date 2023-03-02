@@ -1,4 +1,5 @@
 ## AUTHOR: Picarrow
+## INPUT: executor (player who has an attacker)
 
 # Takes an item from the player
 # Storing it in a storage
