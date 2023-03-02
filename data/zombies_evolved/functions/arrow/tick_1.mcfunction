@@ -1,4 +1,4 @@
 ## AUTHOR: Picarrow
 
 function zombies_evolved:stalac/crumble/_
-tag @s add zev.bow_toy.used
+tag @s add zev.arrow.impacted

@@ -6,4 +6,4 @@ execute unless score @s zev.arrow.bow_id = @s zev.arrow.bow_id store result scor
 execute unless score @s zev.arrow.bow_id = @s zev.arrow.bow_id run scoreboard players set @s zev.arrow.bow_id -1
 
 # Handles the logic for the bow 'bow toy'
-execute if score @s zev.arrow.bow_id matches 1 if entity @s[tag=!zev.bow_toy.used,nbt={inGround:1b}] run function zombies_evolved:arrow/bow_toy_ability
+execute if entity @s[scores={zev.arrow.bow_id=1},tag=!zev.arrow.impacted,nbt={inGround:1b}] run function zombies_evolved:arrow/tick_1
