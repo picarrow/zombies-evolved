@@ -1,6 +1,6 @@
 ## AUTHOR: Picarrow, CloudWolf, nphhpn
 
-# This objective tracks ids, temporary variables, and constants
+# This objective tracks IDs, along with variables and constants
 scoreboard objectives add ehm._ dummy
 scoreboard players set #3 ehm._ 3
 
