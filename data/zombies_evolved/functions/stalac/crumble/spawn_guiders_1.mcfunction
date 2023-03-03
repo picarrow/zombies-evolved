@@ -11,5 +11,5 @@ execute positioned as @s run function zombies_evolved:stalac/crumble/spawn_guide
 
 # if dy and the originating block are valid, succeed otherwise kill
 scoreboard players set #_is_valid zev._ 0
-execute store success score #_is_valid zev._ unless score #_dy zev._ matches -3..-1 unless score #_dy zev._ matches 4 positioned as @s if block ~ ~ ~ #zombies_evolved:cubic run function zombies_evolved:stalac/crumble/spawn_guiders_3
+execute store success score #_is_valid zev._ unless score #_dy zev._ matches -3..-1 unless score #_dy zev._ matches 4 positioned as @s if block ~ ~ ~ #zombies_evolved:cubic_earth run function zombies_evolved:stalac/crumble/spawn_guiders_3
 execute if score #_is_valid zev._ matches 0 run kill @s
