@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "items": [
+          "minecraft:chainmail_boots",
+          "minecraft:chainmail_leggings",
+          "minecraft:chainmail_chestplate",
+          "minecraft:chainmail_helmet"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "items": [
+          "minecraft:golden_boots",
+          "minecraft:golden_leggings",
+          "minecraft:golden_chestplate",
+          "minecraft:golden_helmet"
+        ]
+      }
+    }
+  }
+}
