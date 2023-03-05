@@ -1,16 +1,10 @@
 ## AUTHOR: Picarrow
 
-# Preserve the old item in the output storage
-execute if score #_slot zev._ matches 1 run data modify storage zombies_evolved:equip_if_better old_item set from storage zombies_evolved:_temp root.zombie.ArmorItems[0]
-execute if score #_slot zev._ matches 2 run data modify storage zombies_evolved:equip_if_better old_item set from storage zombies_evolved:_temp root.zombie.ArmorItems[1]
-execute if score #_slot zev._ matches 3 run data modify storage zombies_evolved:equip_if_better old_item set from storage zombies_evolved:_temp root.zombie.ArmorItems[2]
-execute if score #_slot zev._ matches 4 run data modify storage zombies_evolved:equip_if_better old_item set from storage zombies_evolved:_temp root.zombie.ArmorItems[3]
+# Save the old item to the output storage if there is one
+execute store result score #_num_tags zev._ run data get storage zombies_evolved:_temp root.old_item
+execute if score #_num_tags zev._ matches 1.. run data modify storage zombies_evolved:equip_if_better old_item set from storage zombies_evolved:_temp root.old_item
 
-# Discard the old item if it's nothing
-execute store result storage zombies_evolved:_temp root.nbts int 1 run data get storage zombies_evolved:equip_if_better old_item
-execute if data storage zombies_evolved:_temp {root:{nbts:0}} run data remove storage zombies_evolved:equip_if_better old_item
-
-# Replace the old item with the new item
+# Place the new item into its appropriate slot, replacing any old item if there is one
 execute if score #_slot zev._ matches 1 run data modify storage zombies_evolved:_temp root.zombie.ArmorItems[0] set from storage zombies_evolved:equip_if_better item
 execute if score #_slot zev._ matches 2 run data modify storage zombies_evolved:_temp root.zombie.ArmorItems[1] set from storage zombies_evolved:equip_if_better item
 execute if score #_slot zev._ matches 3 run data modify storage zombies_evolved:_temp root.zombie.ArmorItems[2] set from storage zombies_evolved:equip_if_better item
