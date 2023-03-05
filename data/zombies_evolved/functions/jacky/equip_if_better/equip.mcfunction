@@ -11,4 +11,13 @@ execute if data storage zombies_evolved:_temp {root:{nbts:0}} run data remove st
 execute if score #_slot zev._ matches 1 run data modify entity @s ArmorItems[0] set from storage zombies_evolved:equip_if_better item
 execute if score #_slot zev._ matches 2 run data modify entity @s ArmorItems[1] set from storage zombies_evolved:equip_if_better item
 execute if score #_slot zev._ matches 3 run data modify entity @s ArmorItems[2] set from storage zombies_evolved:equip_if_better item
-execute if score #_slot zev._ matches 4 run data modify entity @s ArmorItems[2] set from storage zombies_evolved:equip_if_better item
+execute if score #_slot zev._ matches 4 run data modify entity @s ArmorItems[3] set from storage zombies_evolved:equip_if_better item
+
+#playsound minecraft:item.armor.equip_generic hostile @a ~ ~ ~ 1 1 0
+execute if score #_new_tier zev._ matches 1 run playsound minecraft:item.armor.equip_leather hostile @a ~ ~ ~ 1 1 0
+execute if score #_new_tier zev._ matches 2 run playsound minecraft:item.armor.equip_gold hostile @a ~ ~ ~ 1 1 0
+execute if score #_new_tier zev._ matches 3 run playsound minecraft:item.armor.equip_chain hostile @a ~ ~ ~ 1 1 0
+execute if score #_new_tier zev._ matches 4 run playsound minecraft:item.armor.equip_iron hostile @a ~ ~ ~ 1 1 0
+execute if score #_new_tier zev._ matches 5 run playsound minecraft:item.armor.equip_turtle hostile @a ~ ~ ~ 1 1 0
+execute if score #_new_tier zev._ matches 6 run playsound minecraft:item.armor.equip_diamond hostile @a ~ ~ ~ 1 1 0
+execute if score #_new_tier zev._ matches 7 run playsound minecraft:item.armor.equip_netherite hostile @a ~ ~ ~ 1 1 0
