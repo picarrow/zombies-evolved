@@ -5,10 +5,11 @@
     "equipment": {
       "mainhand": {
         "items": [
-          "minecraft:netherite_boots",
-          "minecraft:netherite_chestplate",
-          "minecraft:netherite_helmet",
-          "minecraft:netherite_leggings"
+          "minecraft:iron_axe",
+          "minecraft:iron_hoe",
+          "minecraft:iron_pickaxe",
+          "minecraft:iron_shovel",
+          "minecraft:iron_sword"
         ]
       }
     }

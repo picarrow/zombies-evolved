@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "zombies_evolved:in_main_hand/has_armor/type/boots"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "zombies_evolved:in_main_hand/has_armor/type/chestplate"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "zombies_evolved:in_main_hand/has_armor/type/helmet"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "zombies_evolved:in_main_hand/has_armor/type/leggings"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "items": [
+          "minecraft:netherite_axe",
+          "minecraft:netherite_hoe",
+          "minecraft:netherite_pickaxe",
+          "minecraft:netherite_shovel",
+          "minecraft:netherite_sword"
+        ]
+      }
+    }
+  }
+}
