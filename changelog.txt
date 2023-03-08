@@ -5,6 +5,7 @@ Features
 - Stalacs can now stalk and ambush villagers.
 - Jackies have a new animation when struck.
 - Jackies now light up when aggro.
+- Jackies now equip favorable items that they pilfered.
 - Added a special bow as an easter egg. `/function zombies_evolved:_/give_bow_toy` can be used to obtain it. When fired at earthy ceilings, it can mimic the 'stalac trap' ability.
 Bug Fixes
 - Stalacs can no longer stalk spectators or dead players.
