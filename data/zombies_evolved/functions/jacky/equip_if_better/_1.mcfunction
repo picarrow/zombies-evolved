@@ -2,8 +2,8 @@
 ##
 ## CONTEXT : at executor
 
-# Stores the zombie's nbt into memory
-data modify storage zombies_evolved:_temp root.zombie set from entity @s
+# Stores the entity's nbt into memory
+data modify storage zombies_evolved:_temp root.entity set from entity @s
 
 # Uses an armor stand to:
 # * Determine which slot the new item belongs to

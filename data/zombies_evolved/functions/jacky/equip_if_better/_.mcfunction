@@ -1,6 +1,6 @@
 ## AUTHOR : Picarrow
 ##
-## INPUT  : executor: zombie
+## INPUT  : executor: a mob that has the nbts 'HandItems' and 'ArmorItems'
 ##          storage: zombies_evolved:equip_if_better
 ##          -> in.item (nbt of the item to equip)
 ##
