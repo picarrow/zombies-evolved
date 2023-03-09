@@ -2,16 +2,12 @@
 ##
 ## CONTEXT : at executor
 
-# Stores the old item into the output storage if there is one
-execute store result score #_tags zev._ run data get storage zombies_evolved:_temp root.old_item
-execute unless score #_tags zev._ matches 0 run data modify storage zombies_evolved:equip_if_better old_item set from storage zombies_evolved:_temp root.old_item
-
 # Places the new item into the slot it belongs to
-execute if score #_slot zev._ matches 0 run data modify storage zombies_evolved:_temp root.zombie.HandItems[0] set from storage zombies_evolved:equip_if_better item
-execute if score #_slot zev._ matches 1 run data modify storage zombies_evolved:_temp root.zombie.ArmorItems[0] set from storage zombies_evolved:equip_if_better item
-execute if score #_slot zev._ matches 2 run data modify storage zombies_evolved:_temp root.zombie.ArmorItems[1] set from storage zombies_evolved:equip_if_better item
-execute if score #_slot zev._ matches 3 run data modify storage zombies_evolved:_temp root.zombie.ArmorItems[2] set from storage zombies_evolved:equip_if_better item
-execute if score #_slot zev._ matches 4 run data modify storage zombies_evolved:_temp root.zombie.ArmorItems[3] set from storage zombies_evolved:equip_if_better item
+execute if score #_slot zev._ matches 0 run data modify storage zombies_evolved:_temp root.zombie.HandItems[0] set from storage zombies_evolved:equip_if_better in.item
+execute if score #_slot zev._ matches 1 run data modify storage zombies_evolved:_temp root.zombie.ArmorItems[0] set from storage zombies_evolved:equip_if_better in.item
+execute if score #_slot zev._ matches 2 run data modify storage zombies_evolved:_temp root.zombie.ArmorItems[1] set from storage zombies_evolved:equip_if_better in.item
+execute if score #_slot zev._ matches 3 run data modify storage zombies_evolved:_temp root.zombie.ArmorItems[2] set from storage zombies_evolved:equip_if_better in.item
+execute if score #_slot zev._ matches 4 run data modify storage zombies_evolved:_temp root.zombie.ArmorItems[3] set from storage zombies_evolved:equip_if_better in.item
 
 # Ensures the slot with the new item has a 100% drop chance
 execute if score #_slot zev._ matches 0 run data modify storage zombies_evolved:_temp root.zombie.HandDropChances[0] set value 2f
