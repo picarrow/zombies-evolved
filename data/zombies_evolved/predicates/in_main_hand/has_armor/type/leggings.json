@@ -4,14 +4,7 @@
   "predicate": {
     "equipment": {
       "mainhand": {
-        "items": [
-          "minecraft:chainmail_leggings",
-          "minecraft:diamond_leggings",
-          "minecraft:golden_leggings",
-          "minecraft:iron_leggings",
-          "minecraft:leather_leggings",
-          "minecraft:netherite_leggings"
-        ]
+        "tag": "zombies_evolved:armor/type/leggings"
       }
     }
   }
