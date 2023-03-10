@@ -1,6 +1,4 @@
-## AUTHOR  : Picarrow
-##
-## CONTEXT : at executor
+## AUTHOR : Picarrow
 
 # Places the new item into the slot it belongs to
 execute if score #_slot zev._ matches 0 run data modify storage zombies_evolved:_temp root.entity.HandItems[0] set from storage zombies_evolved:equip_if_better in.item
@@ -18,9 +16,6 @@ execute if score #_slot zev._ matches 4 run data modify storage zombies_evolved:
 
 # Ensures that the zombie can no longer despawn
 data modify storage zombies_evolved:_temp root.entity.PersistenceRequired set value 1b
-
-# Merges the temporary entity nbt into the actual entity's nbt
-data modify entity @s {} merge from storage zombies_evolved:_temp root.entity
 
 # Plays the corresponding equip sound for the equipped item
 execute if score #_slot zev._ matches 0 run playsound minecraft:entity.item.pickup hostile @a

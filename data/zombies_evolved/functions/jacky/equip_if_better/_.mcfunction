@@ -1,11 +1,14 @@
 ## AUTHOR : Picarrow
 ##
-## INPUT  : executor: a mob that has the nbts 'HandItems' and 'ArmorItems'
-##          storage: zombies_evolved:equip_if_better
-##          -> in.item (nbt of the item to equip)
+## ENTCON : a mob that has NBTs 'HandItems' and 'ArmorItems'
+## POSCON : undefined
 ##
-## OUTPUT : zombies_evolved:equip_if_better
-##          -> out.success (whether the new item was equipped)
-##          -> out.item (nbt of the old item, if any)
+## INPUT  : > in.item - NBT of the item to equip
+##          * in.ignore_slots.feet - whether to ignore the 'feet' slot
+##          * in.ignore_slots.legs - whether to ignore the 'legs' slot
+##          * in.ignore_slots.chest - whether to ignore the 'chest' slot
+##          * in.ignore_slots.head - whether to ignore the 'head' slot
+## OUTPUT : > out.equipped: whether an item was equipped
+##          * out.item: NBT of the item that was replaced
 
 execute at @s run function zombies_evolved:jacky/equip_if_better/_1
