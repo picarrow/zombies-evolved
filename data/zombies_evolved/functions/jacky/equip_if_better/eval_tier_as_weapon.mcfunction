@@ -23,7 +23,7 @@ execute if predicate zombies_evolved:in_main_hand/has_tool/type/hoe run scoreboa
 execute if predicate zombies_evolved:in_main_hand/has_tool/type/pickaxe run scoreboard players operation #_type zev._ = #_PICKAXE zev._
 execute if predicate zombies_evolved:in_main_hand/has_tool/type/shovel run scoreboard players operation #_type zev._ = #_SHOVEL zev._
 execute if predicate zombies_evolved:in_main_hand/has_tool/type/sword run scoreboard players operation #_type zev._ = #_SWORD zev._
-execute if predicate zombies_evolved:in_main_hand/has_tool/type/trident run scoreboard players operation #_type zev._ = #_TRIDENT zev._
+execute if predicate zombies_evolved:in_main_hand/has_tool/trident run scoreboard players operation #_type zev._ = #_TRIDENT zev._
 
 # Determine weapon material
 scoreboard players set #_material zev._ 0
