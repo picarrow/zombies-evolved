@@ -14,7 +14,7 @@ execute if score #_slot zev._ matches 2 run data modify storage zombies_evolved:
 execute if score #_slot zev._ matches 3 run data modify storage zombies_evolved:_temp root.entity.ArmorDropChances[2] set value 2f
 execute if score #_slot zev._ matches 4 run data modify storage zombies_evolved:_temp root.entity.ArmorDropChances[3] set value 2f
 
-# Ensures that the zombie can no longer despawn
+# Ensures that the entity can no longer despawn
 data modify storage zombies_evolved:_temp root.entity.PersistenceRequired set value 1b
 
 # Plays the corresponding equip sound for the equipped item
@@ -27,3 +27,6 @@ execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 4 r
 execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 5 run playsound minecraft:item.armor.equip_turtle hostile @a
 execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 6 run playsound minecraft:item.armor.equip_diamond hostile @a
 execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 7 run playsound minecraft:item.armor.equip_netherite hostile @a
+
+# Informs the caller the item is equipped
+data merge storage zombies_evolved:equip_if_better {out:{equipped:1b}}

@@ -1,6 +1,6 @@
 ## AUTHOR : Picarrow
 
-# Weapon Type Constants
+# Weapon type constants
 scoreboard players set #_AXE zev._ 1
 scoreboard players set #_HOE zev._ 2
 scoreboard players set #_PICKAXE zev._ 3
@@ -8,7 +8,7 @@ scoreboard players set #_SHOVEL zev._ 4
 scoreboard players set #_SWORD zev._ 5
 scoreboard players set #_TRIDENT zev._ 6
 
-# Weapon Material Constants
+# Weapon material constants
 scoreboard players set #_DIAMOND zev._ 1
 scoreboard players set #_GOLDEN zev._ 2
 scoreboard players set #_IRON zev._ 3

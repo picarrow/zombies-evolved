@@ -1,7 +1,7 @@
 ## AUTHOR : Picarrow
 
-# Clears the old output
-data remove storage zombies_evolved:equip_if_better out
+# Initializes the output
+data modify storage zombies_evolved:equip_if_better out set value {equipped:0b}
 
 # Stores the entity's NBT into memory
 data modify storage zombies_evolved:_temp root.entity set from entity @s
@@ -18,7 +18,6 @@ execute unless data storage zombies_evolved:equip_if_better in.ignore_slots{main
 
 # Proceeds if there is a valid slot for the input item
 execute unless score #_slot zev._ matches -1 run function zombies_evolved:jacky/equip_if_better/_2
-execute if score #_slot zev._ matches -1 run data modify storage zombies_evolved:equip_if_better out set value {equipped:0b}
 
 # Merges the stored entity NBT back into the entity
 data modify entity @s {} merge from storage zombies_evolved:_temp root.entity
