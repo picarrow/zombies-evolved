@@ -4,6 +4,7 @@
 ## POSCON : undefined
 ##
 ## INPUT  : > in.item - NBT of the item to equip
+##          * in.ignore_slots.mainhand - whether to ignore the 'mainhand' slot
 ##          * in.ignore_slots.feet - whether to ignore the 'feet' slot
 ##          * in.ignore_slots.legs - whether to ignore the 'legs' slot
 ##          * in.ignore_slots.chest - whether to ignore the 'chest' slot

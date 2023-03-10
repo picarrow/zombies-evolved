@@ -1,48 +1,24 @@
 ## AUTHOR : Picarrow
 
+# Clears the old output
+data remove storage zombies_evolved:equip_if_better out
+
 # Stores the entity's NBT into memory
 data modify storage zombies_evolved:_temp root.entity set from entity @s
 
 # Determines the slot the input item belongs to
-# A value of 0 signifies the main hand
+# A value of -1 signifies there is no valid slot for the item
 data modify entity @s HandItems[0] set from storage zombies_evolved:equip_if_better in.item
-scoreboard players set #_slot zev._ 0
-execute if predicate zombies_evolved:in_main_hand/has_armor/type/boots run scoreboard players set #_slot zev._ 1
-execute if predicate zombies_evolved:in_main_hand/has_armor/type/leggings run scoreboard players set #_slot zev._ 2
-execute if predicate zombies_evolved:in_main_hand/has_armor/type/chestplate run scoreboard players set #_slot zev._ 3
-execute if predicate zombies_evolved:in_main_hand/has_armor/type/helmet run scoreboard players set #_slot zev._ 4
+scoreboard players set #_slot zev._ -1
+execute unless data storage zombies_evolved:equip_if_better in.ignore_slots{feet:1b} if predicate zombies_evolved:in_main_hand/has_armor/type/boots run scoreboard players set #_slot zev._ 1
+execute unless data storage zombies_evolved:equip_if_better in.ignore_slots{legs:1b} if predicate zombies_evolved:in_main_hand/has_armor/type/leggings run scoreboard players set #_slot zev._ 2
+execute unless data storage zombies_evolved:equip_if_better in.ignore_slots{chest:1b} if predicate zombies_evolved:in_main_hand/has_armor/type/chestplate run scoreboard players set #_slot zev._ 3
+execute unless data storage zombies_evolved:equip_if_better in.ignore_slots{head:1b} if predicate zombies_evolved:in_main_hand/has_armor/type/helmet run scoreboard players set #_slot zev._ 4
+execute unless data storage zombies_evolved:equip_if_better in.ignore_slots{mainhand:1b} if score #_slot zev._ matches -1 run scoreboard players set #_slot zev._ 0
 
-# Evaluates the worth of the input item
-function zombies_evolved:jacky/equip_if_better/eval
-scoreboard players operation #_new_tier zev._ = #_tier zev._
-scoreboard players operation #_new_custom_tags zev._ = #_custom_tags zev._
-scoreboard players operation #_new_damage zev._ = #_damage zev._
-
-# Evaluates the worth of the old item
-execute if score #_slot zev._ matches 0 run data modify entity @s HandItems[0] set from storage zombies_evolved:_temp root.entity.HandItems[0]
-execute if score #_slot zev._ matches 1 run data modify entity @s HandItems[0] set from storage zombies_evolved:_temp root.entity.ArmorItems[0]
-execute if score #_slot zev._ matches 2 run data modify entity @s HandItems[0] set from storage zombies_evolved:_temp root.entity.ArmorItems[1]
-execute if score #_slot zev._ matches 3 run data modify entity @s HandItems[0] set from storage zombies_evolved:_temp root.entity.ArmorItems[2]
-execute if score #_slot zev._ matches 4 run data modify entity @s HandItems[0] set from storage zombies_evolved:_temp root.entity.ArmorItems[3]
-function zombies_evolved:jacky/equip_if_better/eval
-scoreboard players operation #_old_tier zev._ = #_tier zev._
-scoreboard players operation #_old_custom_tags zev._ = #_custom_tags zev._
-scoreboard players operation #_old_damage zev._ = #_damage zev._
-
-# Equips the input item if it's:
-# * of a higher tier.
-# * of an equal tier, but has more custom item tags.
-# * of an equal tier, same # of custom item tags, but has less damage.
-data merge storage zombies_evolved:equip_if_better {out:{equipped:0b}}
-execute if data storage zombies_evolved:equip_if_better out{equipped:0b} if score #_new_tier zev._ > #_old_tier zev._ store success storage zombies_evolved:equip_if_better out.equipped byte 1 run function zombies_evolved:jacky/equip_if_better/equip
-execute if data storage zombies_evolved:equip_if_better out{equipped:0b} if score #_new_tier zev._ = #_old_tier zev._ if score #_new_custom_tags zev._ > #_old_custom_tags zev._ store success storage zombies_evolved:equip_if_better out.equipped byte 1 run function zombies_evolved:jacky/equip_if_better/equip
-execute if data storage zombies_evolved:equip_if_better out{equipped:0b} if score #_new_tier zev._ = #_old_tier zev._ if score #_new_custom_tags zev._ = #_old_custom_tags zev._ if score #_new_damage zev._ < #_old_damage zev._ store success storage zombies_evolved:equip_if_better out.equipped byte 1 run function zombies_evolved:jacky/equip_if_better/equip
-
-# Stores the replaced item into NBT 'out.item' if there is one
-execute if data storage zombies_evolved:equip_if_better out{equipped:0b} run data remove storage zombies_evolved:equip_if_better out.item
-execute if data storage zombies_evolved:equip_if_better out{equipped:1b} store result score #_tags zev._ run data get storage zombies_evolved:_temp root.item_to_eval
-execute if data storage zombies_evolved:equip_if_better out{equipped:1b} if score #_tags zev._ matches 0 run data remove storage zombies_evolved:equip_if_better out.item
-execute if data storage zombies_evolved:equip_if_better out{equipped:1b} if score #_tags zev._ matches 1.. run data modify storage zombies_evolved:equip_if_better out.item set from storage zombies_evolved:_temp root.item_to_eval
+# Proceeds if there is a valid slot for the input item
+execute unless score #_slot zev._ matches -1 run function zombies_evolved:jacky/equip_if_better/_2
+execute if score #_slot zev._ matches -1 run data modify storage zombies_evolved:equip_if_better out set value {equipped:0b}
 
 # Merges the stored entity NBT back into the entity
 data modify entity @s {} merge from storage zombies_evolved:_temp root.entity
