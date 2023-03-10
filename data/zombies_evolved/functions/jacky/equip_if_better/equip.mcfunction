@@ -19,11 +19,11 @@ data modify storage zombies_evolved:_temp root.entity.PersistenceRequired set va
 
 # Plays the corresponding equip sound for the equipped item
 execute if score #_slot zev._ matches 0 run playsound minecraft:entity.item.pickup hostile @a
-execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 1 run playsound minecraft:item.armor.equip_generic hostile @a
-execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 2 run playsound minecraft:item.armor.equip_leather hostile @a
-execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 3 run playsound minecraft:item.armor.equip_gold hostile @a
-execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 4 run playsound minecraft:item.armor.equip_chain hostile @a
-execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 5 run playsound minecraft:item.armor.equip_iron hostile @a
-execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 6 run playsound minecraft:item.armor.equip_turtle hostile @a
-execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 7 run playsound minecraft:item.armor.equip_diamond hostile @a
-execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 8 run playsound minecraft:item.armor.equip_netherite hostile @a
+execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 0 run playsound minecraft:item.armor.equip_generic hostile @a
+execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 1 run playsound minecraft:item.armor.equip_leather hostile @a
+execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 2 run playsound minecraft:item.armor.equip_gold hostile @a
+execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 3 run playsound minecraft:item.armor.equip_chain hostile @a
+execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 4 run playsound minecraft:item.armor.equip_iron hostile @a
+execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 5 run playsound minecraft:item.armor.equip_turtle hostile @a
+execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 6 run playsound minecraft:item.armor.equip_diamond hostile @a
+execute if score #_slot zev._ matches 1..4 if score #_new_tier zev._ matches 7 run playsound minecraft:item.armor.equip_netherite hostile @a
