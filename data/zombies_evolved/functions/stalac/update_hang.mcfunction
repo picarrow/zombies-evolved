@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 execute unless score @s zev.stalac.phase_time matches 0.. run scoreboard players set @s zev.stalac.phase_time 6
 

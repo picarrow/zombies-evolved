@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
-# This objective tracks temporary variables
-scoreboard objectives add rtp._ dummy
+# Initializes the data pack
+execute unless data storage reltp:data root{loaded:1b} run function reltp:load_initial

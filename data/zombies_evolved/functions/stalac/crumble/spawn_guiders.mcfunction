@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 # dx and dz
 scoreboard players set $min rdm._ 0

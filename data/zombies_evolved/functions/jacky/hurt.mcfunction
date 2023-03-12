@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 playsound minecraft:item.axe.strip hostile @a ~ ~ ~ 1 0.5 0
 playsound minecraft:entity.illusioner.hurt hostile @a ~ ~ ~ 1 1.5 0

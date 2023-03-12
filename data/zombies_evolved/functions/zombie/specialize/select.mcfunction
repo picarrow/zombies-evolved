@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 # Verify spawn conditions
 scoreboard players set #_jacky_can_spawn zev._ 1

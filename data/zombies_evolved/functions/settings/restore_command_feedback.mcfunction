@@ -1,3 +1,3 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 gamerule sendCommandFeedback true

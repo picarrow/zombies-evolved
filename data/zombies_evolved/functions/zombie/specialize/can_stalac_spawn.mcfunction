@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 function zombies_evolved:stalac/find_hang_point/_
 execute store result score #_height zev._ run data get storage zombies_evolved:find_hang_point height

@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 # Specializes plain zombies
 execute if entity @s[tag=!zev.specialized,tag=!zev.artificial] run function zombies_evolved:zombie/specialize/_

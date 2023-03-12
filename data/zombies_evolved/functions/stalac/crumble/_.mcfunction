@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 ## INPUT: execution position
 
 # 7.353% - 10.294% occupation of positions

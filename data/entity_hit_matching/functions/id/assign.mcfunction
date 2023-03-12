@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow, CloudWolf, nphhpn
+## AUTHOR : Picarrow, CloudWolf, nphhpn
 
 # Attempts to remove existing id tags from the executor
 function entity_hit_matching:id/remove_tags

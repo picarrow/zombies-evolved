@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 # Places the player's equipped items into a list
 data modify storage zombies_evolved:_temp root.zombie set from entity @s {}

@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 # As a consequence of MC-220658, the stalactite tip must drop as an item
 # Otherwise, there won't be an audio cue when the stalactites land

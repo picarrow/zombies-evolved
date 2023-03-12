@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 scoreboard players set $min rdm._ 0
 execute store result score $max rdm._ if data storage zombies_evolved:_temp root.grab_bag[]

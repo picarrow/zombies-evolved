@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 # Determines which bow the arrow originated from
 # A bow ID of -1 indicates that the arrow was not shot by a bow

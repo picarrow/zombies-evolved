@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 execute if score @s zev.shrieker.shriek_time matches 45 run scoreboard players add @s zev.shrieker.warning 1
 execute if score @s zev.shrieker.shriek_time matches 45 run playsound minecraft:block.sculk_shrieker.shriek hostile @a ~ ~ ~ 0.9 1 0

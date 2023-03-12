@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 ## INPUT: reltp:args (storage)
 
 # Dictates the origin of the transformation

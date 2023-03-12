@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 execute unless entity @s[tag=zev.assigned] run function zombies_evolved:shrieker/assign
 execute if entity @s[tag=zev.shrieker.shrieking] run function zombies_evolved:shrieker/update_shriek

@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 data modify entity @s Pos set from storage zombies_evolved:find_hang_point hang_point
 execute unless predicate zombies_evolved:is_baby positioned as @s run tp ~ ~-1.95 ~

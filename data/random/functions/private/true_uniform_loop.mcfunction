@@ -1,4 +1,4 @@
-## AUTHOR: Aeldrion
+## AUTHOR : Aeldrion
 
 #> random:private/true_uniform_loop
 #

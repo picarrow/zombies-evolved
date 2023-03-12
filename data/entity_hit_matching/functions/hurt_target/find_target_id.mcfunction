@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow, CloudWolf, nphhpn
+## AUTHOR : Picarrow, CloudWolf, nphhpn
 
 scoreboard players set #_target_id ehm._ 0
 execute if entity @s[advancements={entity_hit_matching:hurt_target={bit_0_1=true}}] run scoreboard players add #_target_id ehm._ 1

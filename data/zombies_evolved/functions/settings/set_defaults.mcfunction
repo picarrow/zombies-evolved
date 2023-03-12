@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 # Settings
 scoreboard players set $debug_mode zev._ 0

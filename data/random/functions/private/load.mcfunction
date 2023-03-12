@@ -1,4 +1,4 @@
-## AUTHOR: Aeldrion
+## AUTHOR : Aeldrion
 
 #> random:private/load
 #

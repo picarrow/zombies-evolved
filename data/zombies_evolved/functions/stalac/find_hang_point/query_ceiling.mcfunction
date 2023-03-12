@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 # Recursively attempts to locate the ceiling
 # Stops when the helper has:

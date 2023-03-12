@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow, CloudWolf, nphhpn
+## AUTHOR : Picarrow, CloudWolf, nphhpn
 
 function entity_hit_matching:hurt_target/find_target_id
 advancement revoke @s only entity_hit_matching:hurt_target

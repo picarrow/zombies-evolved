@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 ## INPUT: execution position
 ## OUTPUT STORAGE: zombies_evolved:find_hang_point
 

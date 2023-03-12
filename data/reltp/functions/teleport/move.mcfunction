@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 # Teleports the helper entity to where it needs to be
 data modify entity @s {} merge from storage reltp:_temp temp

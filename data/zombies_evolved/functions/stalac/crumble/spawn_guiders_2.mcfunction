@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 tp ~ ~1 ~
 scoreboard players add #_dy zev._ 1

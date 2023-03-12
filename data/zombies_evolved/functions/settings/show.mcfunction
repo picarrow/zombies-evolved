@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow
+## AUTHOR : Picarrow
 
 playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1.8 1
 

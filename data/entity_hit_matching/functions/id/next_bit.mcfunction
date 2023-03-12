@@ -1,4 +1,4 @@
-## AUTHOR: Picarrow, CloudWolf, nphhpn
+## AUTHOR : Picarrow, CloudWolf, nphhpn
 
 scoreboard players operation #_bit ehm._ = #_temp_id ehm._
 scoreboard players operation #_bit ehm._ %= #3 ehm._
