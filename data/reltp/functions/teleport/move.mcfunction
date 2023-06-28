@@ -1,10 +1,10 @@
 ## AUTHOR : Picarrow
 
-# Teleports the helper entity to where it needs to be
-data modify entity @s {} merge from storage reltp:_temp temp
+# Teleports the marker to where it needs to be
+data modify entity @s {} merge from storage reltp:data temp.final
 
-# Teleports the original executor to the helper entity
-tp @e[tag=rtp._executor,distance=..0.00001,limit=1] @s
+# Teleports the subject to the marker
+tp @e[tag=rtp._subject,distance=..0.00001,limit=1] @s
 
-# Destroys the helper entity
+# Kills the marker
 kill @s
