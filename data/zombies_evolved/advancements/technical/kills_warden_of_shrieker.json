@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "killed_the_warden_of_a_shrieker": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:warden",
+              "nbt": "{Tags:[\"zev.shrieker.warden\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "zombies_evolved:event/player_kills_warden_of_shrieker"
+  }
+}

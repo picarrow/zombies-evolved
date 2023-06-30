@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:sculk_catalyst"
+    },
+    "title": "War-didn't",
+    "description": "Kill a Warden summoned by a Shrieker",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "zombies_evolved:tab/main/cops_called",
+  "criteria": {
+    "function_grant": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:iron_sword"
+    },
+    "title": "Brain Rot",
+    "description": "Kill any evolved zombie",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "zombies_evolved:tab/main/root",
+  "criteria": {
+    "function_grant": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,10 +1,11 @@
 {
   "replace": false,
   "values": [
-    "air",
-    "cave_air",
-    "structure_void",
-    "void_air",
-    "water"
+    "minecraft:air",
+    "minecraft:cave_air",
+    "minecraft:lava",
+    "minecraft:structure_void",
+    "minecraft:void_air",
+    "minecraft:water"
   ]
 }

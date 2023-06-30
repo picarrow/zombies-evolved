@@ -2,8 +2,8 @@
   "replace": false,
   "values": [
     "reltp:load",
-    "mob_equip:load",
     "random:private/load",
+    "mob_equip:load",
     "entity_hit_matching:load",
     "zombies_evolved:load"
   ]

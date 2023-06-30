@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:zombie_head"
+    },
+    "title": "Zombies Evolved",
+    "description": "Yet just as brainless",
+    "background": "minecraft:textures/block/obsidian.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "function_grant": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

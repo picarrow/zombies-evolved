@@ -1,0 +1,59 @@
+{
+  "criteria": {
+    "killed_a_jacky": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "#zombies_evolved:targets",
+              "nbt": "{Tags:[\"zev.jacky\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "killed_a_shrieker": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "#zombies_evolved:targets",
+              "nbt": "{Tags:[\"zev.shrieker\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "killed_a_stalac": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "#zombies_evolved:targets",
+              "nbt": "{Tags:[\"zev.stalac\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "killed_a_jacky",
+      "killed_a_shrieker",
+      "killed_a_stalac"
+    ]
+  ],
+  "rewards": {
+    "function": "zombies_evolved:event/player_kills_evolved_zombie"
+  }
+}

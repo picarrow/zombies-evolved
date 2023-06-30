@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:golden_helmet"
+    },
+    "title": "Construction Zone",
+    "description": "Withstand the crushing forces of a Stalac's stalactite",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "zombies_evolved:tab/main/root",
+  "criteria": {
+    "function_grant": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

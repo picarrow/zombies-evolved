@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:feather"
+    },
+    "title": "Down from the Birdhouse",
+    "description": "Knock a Stalac from its perch",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "zombies_evolved:tab/main/root",
+  "criteria": {
+    "function_grant": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

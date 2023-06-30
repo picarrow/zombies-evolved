@@ -1,8 +1,11 @@
 {
   "replace": false,
   "values": [
-    "minecraft:zombie",
+    "minecraft:arrow",
+    "minecraft:drowned",
     "minecraft:husk",
-    "minecraft:drowned"
+    "minecraft:player",
+    "minecraft:spectral_arrow",
+    "minecraft:zombie"
   ]
 }

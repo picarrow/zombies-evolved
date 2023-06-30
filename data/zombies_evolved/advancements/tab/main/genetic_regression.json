@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:diamond_sword"
+    },
+    "title": "Genetic Regression",
+    "description": "Kill one of every evolved zombie",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "zombies_evolved:tab/main/brain_rot",
+  "criteria": {
+    "function_grant_1": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_2": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_3": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

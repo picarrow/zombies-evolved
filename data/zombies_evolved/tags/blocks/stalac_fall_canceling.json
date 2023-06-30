@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cobweb",
+    "minecraft:lava",
+    "minecraft:powder_snow",
+    "minecraft:water"
+  ]
+}

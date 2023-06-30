@@ -1,0 +1,616 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:rotten_flesh"
+    },
+    "title": "Darwinism",
+    "description": "Kill two hundred evolved zombies",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "zombies_evolved:tab/main/brain_rot",
+  "criteria": {
+    "function_grant_1": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_2": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_3": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_4": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_5": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_6": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_7": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_8": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_9": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_10": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_11": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_12": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_13": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_14": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_15": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_16": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_17": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_18": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_19": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_20": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_21": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_22": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_23": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_24": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_25": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_26": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_27": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_28": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_29": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_30": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_31": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_32": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_33": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_34": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_35": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_36": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_37": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_38": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_39": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_40": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_41": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_42": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_43": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_44": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_45": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_46": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_47": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_48": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_49": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_50": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_51": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_52": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_53": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_54": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_55": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_56": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_57": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_58": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_59": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_60": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_61": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_62": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_63": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_64": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_65": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_66": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_67": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_68": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_69": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_70": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_71": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_72": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_73": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_74": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_75": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_76": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_77": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_78": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_79": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_80": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_81": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_82": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_83": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_84": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_85": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_86": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_87": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_88": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_89": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_90": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_91": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_92": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_93": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_94": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_95": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_96": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_97": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_98": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_99": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_100": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_101": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_102": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_103": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_104": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_105": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_106": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_107": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_108": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_109": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_110": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_111": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_112": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_113": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_114": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_115": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_116": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_117": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_118": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_119": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_120": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_121": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_122": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_123": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_124": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_125": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_126": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_127": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_128": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_129": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_130": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_131": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_132": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_133": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_134": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_135": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_136": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_137": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_138": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_139": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_140": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_141": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_142": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_143": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_144": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_145": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_146": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_147": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_148": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_149": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_150": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_151": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_152": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_153": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_154": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_155": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_156": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_157": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_158": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_159": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_160": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_161": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_162": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_163": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_164": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_165": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_166": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_167": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_168": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_169": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_170": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_171": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_172": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_173": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_174": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_175": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_176": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_177": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_178": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_179": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_180": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_181": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_182": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_183": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_184": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_185": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_186": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_187": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_188": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_189": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_190": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_191": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_192": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_193": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_194": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_195": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_196": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_197": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_198": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_199": {
+      "trigger": "minecraft:impossible"
+    },
+    "function_grant_200": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
