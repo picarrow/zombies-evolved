@@ -10,8 +10,8 @@ execute store result score #_tags meq._ run data get storage mob_equip:equip_if_
 execute if score #_tags meq._ matches 1.. run scoreboard players set #_tier meq._ 0
 
 # Different evaluation of item tier depending on the slot
-execute if score #_slot meq._ matches 0 run function mob_equip:util/equip_if_better/eval_tier_as_weapon
-execute if score #_slot meq._ matches 1..4 run function mob_equip:util/equip_if_better/eval_tier_as_armor
+execute if score #_slot meq._ matches 0 run function mob_equip:equip_if_better/eval_tier_as_weapon
+execute if score #_slot meq._ matches 1..4 run function mob_equip:equip_if_better/eval_tier_as_armor
 
 # Queries the number of custom item tags the item has
 scoreboard players set #_custom_tags meq._ 0

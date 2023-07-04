@@ -12,4 +12,4 @@
 ## OUTPUT : > out.equipped - whether an item was equipped
 ##          * out.item - NBT of the item that was replaced
 
-execute at @s run function mob_equip:util/equip_if_better/_1
+execute at @s run function mob_equip:equip_if_better/_1
