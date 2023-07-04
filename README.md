@@ -1,4 +1,4 @@
-***Download Tested Versions from [Releases](https://github.com/picarrow/zombies-evolved/releases)***
+***Download Stable Versions from [Releases](https://github.com/picarrow/zombies-evolved/releases)***
 # Zombies Evolved
 Zombies Evolved is a data pack that seeks to provide players with a uniquely arduous challenge while also maintaining Minecraft's beloved feel and freedom.
 Each zombie variant added is intended to bring along new mechanics and a refreshing ambience of horror.
