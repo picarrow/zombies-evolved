@@ -9,8 +9,8 @@
 ##          * func.find_hang_point.out.height: the number of blocks between the ground and the ceiling
 ##          * func.find_hang_point.out.valid: whether the hang point is valid
 
-# Clears the output
-data remove storage zombies_evolved:data func.find_hang_point.out
+# Initializes the output
+data modify storage zombies_evolved:data func.find_hang_point.out set value {height:-1,valid:0b}
 
 # Proceeds with the help of a marker
 execute summon minecraft:marker run function zombies_evolved:entity/stalac/find_hang_point/query_ceiling
