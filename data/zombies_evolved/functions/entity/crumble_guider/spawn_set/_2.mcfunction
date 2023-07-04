@@ -4,9 +4,8 @@
 # * Step 1
 scoreboard players set #_dy zev._ -4
 # * Step 2
-data modify storage reltp:data func.teleport.in set value {offset:[0d,0d,0d]}
+data modify storage reltp:data func.teleport.in set value {offset:[0d,-4d,0d]}
 execute store result storage reltp:data func.teleport.in.offset[0] double 1 run scoreboard players get #_dx zev._
-execute store result storage reltp:data func.teleport.in.offset[1] double 1 run scoreboard players get #_dy zev._
 execute store result storage reltp:data func.teleport.in.offset[2] double 1 run scoreboard players get #_dz zev._
 function reltp:_/teleport
 # * Step 3
