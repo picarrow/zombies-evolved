@@ -4,7 +4,7 @@
     "reltp:load",
     "random:private/load",
     "mob_equip:load",
-    "entity_hit_matching:load",
+    "hit_match:load",
     "zombies_evolved:load"
   ]
 }
