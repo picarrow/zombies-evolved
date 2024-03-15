@@ -2,7 +2,7 @@
 
 data modify entity @s ArmorDropChances[3] set value 0f
 item replace entity @s armor.head with minecraft:dripstone_block
-data merge entity @s {CustomName:'',CanPickUpLoot:0b}
+data merge entity @s {CanPickUpLoot:0b}
 
 # Stalacs should dismount vehicles in order to hang
 # Due to MC-264022, this isn't possible
