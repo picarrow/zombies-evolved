@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "reltp:load",
     "random:private/load",
     "mob_equip:load",
     "hit_match:load",
