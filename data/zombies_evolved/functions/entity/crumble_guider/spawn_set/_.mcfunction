@@ -1,19 +1,24 @@
 ## AUTHOR : Picarrow
-##
-## ENTCON : inconsequential
-## POSCON : the location at which to focus the ability
+##        :
+## ENTCON : ---
+## POSCON : The location at which to focus the effect
+##  INPUT : Guiders, positions, attempts
+##        :
+## EFFECT : Attempts to spawn crumble guiders at randomly chosen deltas
+## OUTPUT : ---
 
-# Clears the temp data
-data remove storage zombies_evolved:data temp
+# Clear temp data
+data remove storage zombies_evolved:_ _.func.crumble.temp
 
-# Determines the idealistic number of guiders to spawn
-scoreboard players set $min rdm._ 5
-scoreboard players set $max rdm._ 7
-function random:true_uniform
-scoreboard players operation #_max_guiders zev._ = $out rdm._
+# Set defaults
+execute unless data storage zombies_evolved:_ _.func.crumble.in.guiders run data modify storage zombies_evolved:_ _.func.crumble.in.guiders set value 3
+execute unless data storage zombies_evolved:_ _.func.crumble.in.positions run data modify storage zombies_evolved:_ _.func.crumble.in.positions set value [[-1,-1],[-1,0],[-1,1],[0,-1],[0,0],[0,1],[1,-1],[1,0],[1,1]]
+execute unless data storage zombies_evolved:_ _.func.crumble.in.attempts run data modify storage zombies_evolved:_ _.func.crumble.in.attempts set value 9
 
-# Attempts to spawn the guiders
-scoreboard players set #_num_guiders zev._ 0
+# Attempt to spawn guiders
+scoreboard players set #_guiders zev._ 0
 scoreboard players set #_attempts zev._ 0
-data modify storage zombies_evolved:data temp.remaining_positions set value [[-4,-2],[-4,-1],[-4,0],[-4,1],[-4,2],[-3,-3],[-3,-2],[-3,-1],[-3,0],[-3,1],[-3,2],[-3,3],[-2,-4],[-2,-3],[-2,-2],[-2,-1],[-2,0],[-2,1],[-2,2],[-2,3],[-2,4],[-1,-4],[-1,-3],[-1,-2],[-1,-1],[-1,0],[-1,1],[-1,2],[-1,3],[-1,4],[0,-4],[0,-3],[0,-2],[0,-1],[0,1],[0,2],[0,3],[0,4],[1,-4],[1,-3],[1,-2],[1,-1],[1,0],[1,1],[1,2],[1,3],[1,4],[2,-4],[2,-3],[2,-2],[2,-1],[2,0],[2,1],[2,2],[2,3],[2,4],[3,-3],[3,-2],[3,-1],[3,0],[3,1],[3,2],[3,3],[4,-2],[4,-1],[4,0],[4,1],[4,2]]
+execute store result score #_max_guiders zev._ run data get storage zombies_evolved:_ _.func.crumble.in.guiders
+execute store result score #_max_attempts zev._ run data get storage zombies_evolved:_ _.func.crumble.in.attempts
+data modify storage zombies_evolved:_ _.func.crumble.temp.positions set from storage zombies_evolved:_ _.func.crumble.in.positions
 function zombies_evolved:entity/crumble_guider/spawn_set/_1
