@@ -8,6 +8,9 @@ execute as @e[tag=zev.stalac_spawn_egg_marker] at @s run function zombies_evolve
 # Arrows
 execute as @e[type=minecraft:arrow] at @s run function zombies_evolved:entity/arrow/tick
 
+# Stalac Memory Guiders
+execute as @e[tag=zev.stalac_memory_guider] at @s run function zombies_evolved:entity/stalac_memory_guider/tick
+
 # Crumble guiders
 execute as @e[tag=zev.crumble_guider] at @s run function zombies_evolved:entity/crumble_guider/tick
 
