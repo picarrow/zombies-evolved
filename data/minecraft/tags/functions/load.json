@@ -3,7 +3,6 @@
   "values": [
     "random:private/load",
     "mob_equip:load",
-    "hit_match:load",
     "zombies_evolved:load"
   ]
 }
