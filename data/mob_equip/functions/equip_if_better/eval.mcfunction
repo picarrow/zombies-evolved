@@ -15,8 +15,8 @@ execute if score #_slot meq._ matches 1..4 run function mob_equip:equip_if_bette
 
 # Queries the number of custom item tags the item has
 scoreboard players set #_custom_tags meq._ 0
-execute if data storage mob_equip:equip_if_better temp.item_to_eval.tag store result score #_custom_tags meq._ run data get storage mob_equip:equip_if_better temp.item_to_eval.tag
+execute if data storage mob_equip:equip_if_better temp.item_to_eval.components store result score #_custom_tags meq._ run data get storage mob_equip:equip_if_better temp.item_to_eval.components
 
 # Queries the amount of damage the item has taken
 scoreboard players set #_damage meq._ 0
-execute if data storage mob_equip:equip_if_better temp.item_to_eval.tag.Damage store result score #_damage meq._ run data get storage mob_equip:equip_if_better temp.item_to_eval.tag.Damage
+execute if data storage mob_equip:equip_if_better temp.item_to_eval.components."minecraft:damage" store result score #_damage meq._ run data get storage mob_equip:equip_if_better temp.item_to_eval.components."minecraft:damage"

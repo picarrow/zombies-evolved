@@ -18,21 +18,21 @@ scoreboard players set #_WOODEN meq._ 6
 
 # Determine weapon type
 scoreboard players set #_type meq._ 0
-execute if predicate mob_equip:in_main_hand/has_tool/type/axe run scoreboard players operation #_type meq._ = #_AXE meq._
-execute if predicate mob_equip:in_main_hand/has_tool/type/hoe run scoreboard players operation #_type meq._ = #_HOE meq._
-execute if predicate mob_equip:in_main_hand/has_tool/type/pickaxe run scoreboard players operation #_type meq._ = #_PICKAXE meq._
-execute if predicate mob_equip:in_main_hand/has_tool/type/shovel run scoreboard players operation #_type meq._ = #_SHOVEL meq._
-execute if predicate mob_equip:in_main_hand/has_tool/type/sword run scoreboard players operation #_type meq._ = #_SWORD meq._
-execute if predicate mob_equip:in_main_hand/has_tool/trident run scoreboard players operation #_type meq._ = #_TRIDENT meq._
+execute if items entity @s weapon.mainhand #mob_equip:tool/type/axe run scoreboard players operation #_type meq._ = #_AXE meq._
+execute if items entity @s weapon.mainhand #mob_equip:tool/type/hoe run scoreboard players operation #_type meq._ = #_HOE meq._
+execute if items entity @s weapon.mainhand #mob_equip:tool/type/pickaxe run scoreboard players operation #_type meq._ = #_PICKAXE meq._
+execute if items entity @s weapon.mainhand #mob_equip:tool/type/shovel run scoreboard players operation #_type meq._ = #_SHOVEL meq._
+execute if items entity @s weapon.mainhand #mob_equip:tool/type/sword run scoreboard players operation #_type meq._ = #_SWORD meq._
+execute if items entity @s weapon.mainhand minecraft:trident run scoreboard players operation #_type meq._ = #_TRIDENT meq._
 
 # Determine weapon material
 scoreboard players set #_material meq._ 0
-execute if predicate mob_equip:in_main_hand/has_tool/tier/diamond run scoreboard players operation #_material meq._ = #_DIAMOND meq._
-execute if predicate mob_equip:in_main_hand/has_tool/tier/golden run scoreboard players operation #_material meq._ = #_GOLDEN meq._
-execute if predicate mob_equip:in_main_hand/has_tool/tier/iron run scoreboard players operation #_material meq._ = #_IRON meq._
-execute if predicate mob_equip:in_main_hand/has_tool/tier/netherite run scoreboard players operation #_material meq._ = #_NETHERITE meq._
-execute if predicate mob_equip:in_main_hand/has_tool/tier/stone run scoreboard players operation #_material meq._ = #_STONE meq._
-execute if predicate mob_equip:in_main_hand/has_tool/tier/wooden run scoreboard players operation #_material meq._ = #_WOODEN meq._
+execute if items entity @s weapon.mainhand #mob_equip:tool/tier/diamond run scoreboard players operation #_material meq._ = #_DIAMOND meq._
+execute if items entity @s weapon.mainhand #mob_equip:tool/tier/golden run scoreboard players operation #_material meq._ = #_GOLDEN meq._
+execute if items entity @s weapon.mainhand #mob_equip:tool/tier/iron run scoreboard players operation #_material meq._ = #_IRON meq._
+execute if items entity @s weapon.mainhand #mob_equip:tool/tier/netherite run scoreboard players operation #_material meq._ = #_NETHERITE meq._
+execute if items entity @s weapon.mainhand #mob_equip:tool/tier/stone run scoreboard players operation #_material meq._ = #_STONE meq._
+execute if items entity @s weapon.mainhand #mob_equip:tool/tier/wooden run scoreboard players operation #_material meq._ = #_WOODEN meq._
 
 # Tiers
 execute if score #_type meq._ = #_HOE meq._ run scoreboard players set #_tier meq._ 1
