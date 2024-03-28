@@ -2,7 +2,7 @@
 
 # Equips the item if it's better
 # Ignores the head slot
-data modify storage mob_equip:equip_if_better root.in set value {ignore_slots:{head:1b}}
+data modify storage mob_equip:equip_if_better root.in set value {ignore_slots:{head:{}}}
 data modify storage mob_equip:equip_if_better root.in.item set from storage zombies_evolved:pilfer temp.stolen_item
 execute on attacker run function mob_equip:_/equip_if_better
 
