@@ -1,3 +1,3 @@
 ## AUTHOR : Picarrow
 
-give @s minecraft:bow{display:{Lore:['[{"text":"Combat","italic":false,"color":"blue"}]','[{"text":"Bow Toy"}]']},zombies_evolved:{id:1}} 1
+give @s minecraft:bow[minecraft:item_name='{"text":"Bow Toy"}',minecraft:lore=['[{"text":"Combat","italic":false,"color":"blue"}]'],minecraft:custom_data={zombies_evolved:{id:1}}]
