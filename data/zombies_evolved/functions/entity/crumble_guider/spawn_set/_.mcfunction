@@ -21,4 +21,5 @@ scoreboard players set #_attempts zev._ 0
 execute store result score #_max_guiders zev._ run data get storage zombies_evolved:_ _.func.crumble.in.guiders
 execute store result score #_max_attempts zev._ run data get storage zombies_evolved:_ _.func.crumble.in.attempts
 data modify storage zombies_evolved:_ _.func.crumble.temp.positions set from storage zombies_evolved:_ _.func.crumble.in.positions
+execute store result score #_positions_left zev._ if data storage zombies_evolved:_ _.func.crumble.temp.positions[]
 function zombies_evolved:entity/crumble_guider/spawn_set/_1
