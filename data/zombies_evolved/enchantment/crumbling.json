@@ -1,0 +1,51 @@
+{
+  "description": "Crumbling",
+  "supported_items": [
+    "minecraft:bow",
+    "minecraft:crossbow"
+  ],
+  "primary_items": [],
+  "weight": 2,
+  "max_level": 2,
+  "max_cost": {
+    "base": 75,
+    "per_level_above_first": 25
+  },
+  "min_cost": {
+    "base": 25,
+    "per_level_above_first": 25
+  },
+  "anvil_cost": 4,
+  "slots": [
+    "hand"
+  ],
+  "effects": {
+    "minecraft:crossbow_charging_sounds": [
+      {
+        "start": "minecraft:block.dripstone_block.place",
+        "mid": "minecraft:block.dripstone_block.break",
+        "end": "minecraft:block.dripstone_block.fall"
+      },
+      {
+        "start": "minecraft:block.dripstone_block.place",
+        "mid": "minecraft:block.dripstone_block.break",
+        "end": "minecraft:block.dripstone_block.fall"
+      }
+    ],
+    "minecraft:hit_block": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "zombies_evolved:enchantment/crumbling/crumble/_"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "#minecraft:arrows"
+          }
+        }
+      }
+    ]
+  }
+}
