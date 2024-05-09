@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:feather"
+      "id": "minecraft:feather"
     },
     "title": "Down from the Birdhouse",
     "description": "Knock a Stalac from its perch",

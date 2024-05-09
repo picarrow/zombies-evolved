@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:zombie_head"
+      "id": "minecraft:zombie_head"
     },
     "title": "Zombies Evolved",
     "description": "Yet just as brainless",

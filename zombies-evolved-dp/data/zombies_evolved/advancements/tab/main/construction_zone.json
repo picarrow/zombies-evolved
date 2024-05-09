@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:golden_helmet"
+      "id": "minecraft:golden_helmet"
     },
     "title": "Construction Zone",
     "description": "Withstand the crushing forces of a Stalac's stalactite",

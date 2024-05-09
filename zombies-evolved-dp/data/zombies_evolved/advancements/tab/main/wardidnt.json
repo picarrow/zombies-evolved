@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:sculk_catalyst"
+      "id": "minecraft:sculk_catalyst"
     },
     "title": "War-didn't",
     "description": "Kill a Warden summoned by a Shrieker",
