@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "random:private/load",
     "mob_equip:load",
     "zombies_evolved:load"
   ]
