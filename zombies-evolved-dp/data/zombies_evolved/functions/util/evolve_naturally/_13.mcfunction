@@ -2,5 +2,5 @@
 
 execute unless function zombies_evolved:util/evolve_naturally/_131 run return 0
 
-tag @s add zev.stalac
+function zombies_evolved:evolution/type/stalac/assign/_
 return 1

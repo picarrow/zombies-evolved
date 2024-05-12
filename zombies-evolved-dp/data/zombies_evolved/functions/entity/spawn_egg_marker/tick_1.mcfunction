@@ -1,5 +1,4 @@
 ## AUTHOR : Picarrow
 
-$tag @s add zev.$(evolution)
-tag @s add zev.evolved
+$function zombies_evolved:evolution/type/$(evolution)/assign/_
 tag @s add zev.artificial

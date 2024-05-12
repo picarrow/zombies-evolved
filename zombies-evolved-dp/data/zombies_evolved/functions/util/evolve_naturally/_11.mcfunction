@@ -1,4 +1,4 @@
 ## AUTHOR : Picarrow
 
-tag @s add zev.jacky
+function zombies_evolved:evolution/type/jacky/assign/_
 return 1

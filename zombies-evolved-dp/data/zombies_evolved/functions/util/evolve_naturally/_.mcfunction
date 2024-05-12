@@ -8,5 +8,4 @@
 ##          determine which evolution the zombie type should evolve into.
 ## OUTPUT : ---
 
-execute at @s unless function zombies_evolved:util/evolve_naturally/_1 run tag @s add zev.evolution.generic
-tag @s add zev.evolved
+execute at @s unless function zombies_evolved:util/evolve_naturally/_1 run function zombies_evolved:evolution/type/generic/assign/_

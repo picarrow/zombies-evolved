@@ -1,7 +1,5 @@
 ## AUTHOR : Picarrow
 
-execute unless entity @s[tag=zev.assigned] run function zombies_evolved:entity/jacky/assign
-
 # Check anger
 scoreboard players set #_is_angry zev._ 0
 execute on target run scoreboard players set #_is_angry zev._ 1

@@ -11,5 +11,3 @@ data merge entity @s {CanPickUpLoot:0b}
 function zombies_evolved:entity/stalac/find_hang_point/_
 execute if entity @s[tag=!zev.artificial] unless predicate zombies_evolved:has_vehicle if data storage zombies_evolved:data func.find_hang_point.out{valid:1b} run function zombies_evolved:entity/stalac/hang
 execute if entity @s[tag=zev.artificial] unless predicate zombies_evolved:has_vehicle if data storage zombies_evolved:data func.find_hang_point.out{height:1,valid:1b} run function zombies_evolved:entity/stalac/hang
-
-tag @s add zev.assigned
