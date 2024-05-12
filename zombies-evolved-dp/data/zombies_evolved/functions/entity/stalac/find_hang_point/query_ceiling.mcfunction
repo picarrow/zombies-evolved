@@ -17,7 +17,7 @@ execute store result storage zombies_evolved:data func.find_hang_point.out.heigh
 # 2. Another stalac is not already hanging at that point
 # If valid, records the hang point into the NBT 'hang_point'
 execute unless score #_height zev._ matches -1 positioned as @s align xyz run tp @s ~0.5 ~ ~0.5
-execute store success storage zombies_evolved:data func.find_hang_point.out.valid byte 1 unless score #_height zev._ matches -1 positioned as @s if block ~ ~ ~ #zombies_evolved:stalac_can_hang_on align xyz unless entity @e[dy=-1,type=#zombies_evolved:can_specialize,tag=zev.stalac.hanging,limit=1] run data modify storage zombies_evolved:data func.find_hang_point.out.hang_point set from entity @s Pos
+execute store success storage zombies_evolved:data func.find_hang_point.out.valid byte 1 unless score #_height zev._ matches -1 positioned as @s if block ~ ~ ~ #zombies_evolved:stalac_can_hang_on align xyz unless entity @e[dy=-1,type=#zombies_evolved:can_evolve,tag=zev.stalac.hanging,limit=1] run data modify storage zombies_evolved:data func.find_hang_point.out.hang_point set from entity @s Pos
 
 # Records whether the hang point is ideal into the NBT 'habitat'
 # A hang point is ideal if the ceiling block is a dripstone block
