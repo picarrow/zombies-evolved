@@ -7,7 +7,6 @@ scoreboard objectives add zev._ dummy
 function zombies_evolved:settings/set_defaults
 
 # These objectives track scores relating to various kinds of entities
-scoreboard objectives add zev.arrow.bow_id dummy
 scoreboard objectives add zev.crumble_guider.age dummy
 scoreboard objectives add zev.jacky.lit_time dummy
 scoreboard objectives add zev.player.adv_cz_has_died deathCount
