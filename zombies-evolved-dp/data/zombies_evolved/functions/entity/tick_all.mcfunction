@@ -16,7 +16,7 @@ execute as @a at @s run function zombies_evolved:entity/player/tick
 
 # New Spawns
 execute if score $natural_spawning zev._ matches 0 as @e[type=#zombies_evolved:can_evolve,tag=!zev.evolved] run function zombies_evolved:evolution/type/generic/assign/_
-execute if score $natural_spawning zev._ matches 1 as @e[type=#zombies_evolved:can_evolve,tag=!zev.evolved] run function zombies_evolved:util/evolve_naturally/_
+execute if score $natural_spawning zev._ matches 1 as @e[type=#zombies_evolved:can_evolve,tag=!zev.evolved] run function zombies_evolved:evolution/evolve_naturally/_
 
 # Jackies
 execute as @e[tag=zev.jacky] at @s run function zombies_evolved:entity/jacky/tick
