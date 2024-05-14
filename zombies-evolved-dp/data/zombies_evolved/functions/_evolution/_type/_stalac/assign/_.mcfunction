@@ -7,7 +7,8 @@ data modify storage zombies_evolved:data _.func.evolution.stalac.assign.temp.ent
 
 execute unless predicate zombies_evolved:has_vehicle if function zombies_evolved:_evolution/_type/_stalac/assign/_1 run function zombies_evolved:_evolution/_type/_stalac/assign/_2
 
-data modify entity @s {} merge from storage zombies_evolved:data _.func.evolution.stalac.assign.temp.entity_data
+# Record new evolution type state into tags
+data modify storage zombies_evolved:data _.func.evolution.stalac.assign.temp.entity_data.Tags append value "zev.stalac"
+data modify storage zombies_evolved:data _.func.evolution.stalac.assign.temp.entity_data.Tags append value "zev.evolved"
 
-tag @s add zev.stalac
-tag @s add zev.evolved
+data modify entity @s {} merge from storage zombies_evolved:data _.func.evolution.stalac.assign.temp.entity_data
