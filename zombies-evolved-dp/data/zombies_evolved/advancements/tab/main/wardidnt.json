@@ -12,8 +12,20 @@
   },
   "parent": "zombies_evolved:tab/main/cops_called",
   "criteria": {
-    "function_grant": {
-      "trigger": "minecraft:impossible"
+    "kill_a_warden_summoned_by_a_shrieker": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:warden",
+              "nbt": "{Tags:[\"zev.shrieker.warden\"]}"
+            }
+          }
+        ]
+      }
     }
   }
 }
