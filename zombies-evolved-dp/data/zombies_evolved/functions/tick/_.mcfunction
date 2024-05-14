@@ -9,9 +9,6 @@ execute as @e[tag=zev.jacky_spawn_egg_marker] at @s run function zombies_evolved
 execute as @e[tag=zev.shrieker_spawn_egg_marker] at @s run function zombies_evolved:_entity/_spawn_egg_marker/tick/_ {evolution:"shrieker"}
 execute as @e[tag=zev.stalac_spawn_egg_marker] at @s run function zombies_evolved:_entity/_spawn_egg_marker/tick/_ {evolution:"stalac"}
 
-# Stalac Memory Guiders
-execute as @e[tag=zev.stalac_memory_guider] at @s run function zombies_evolved:_entity/_stalac_memory_guider/tick/_
-
 # Crumble Guiders
 execute as @e[tag=zev.crumble_guider] at @s run function zombies_evolved:_entity/_crumble_guider/tick/_
 

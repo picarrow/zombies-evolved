@@ -1,16 +1,13 @@
 ## AUTHOR : Picarrow
 
+data modify storage zombies_evolved:data _.func.evolution.stalac.assign.temp.entity_data set from entity @s
+data modify storage zombies_evolved:data _.func.evolution.stalac.assign.temp.entity_data.ArmorItems[3] set value {id:"minecraft:dripstone_block"}
+data modify storage zombies_evolved:data _.func.evolution.stalac.assign.temp.entity_data.ArmorDropChances[3] set value 0f
+data modify storage zombies_evolved:data _.func.evolution.stalac.assign.temp.entity_data merge value {CustomName:'{"text":"Stalac"}',CanPickUpLoot:0b}
+
+execute unless predicate zombies_evolved:has_vehicle if function zombies_evolved:_evolution/_type/_stalac/assign/_1 run function zombies_evolved:_evolution/_type/_stalac/assign/_2
+
+data modify entity @s {} merge from storage zombies_evolved:data _.func.evolution.stalac.assign.temp.entity_data
+
 tag @s add zev.stalac
 tag @s add zev.evolved
-
-data modify entity @s ArmorDropChances[3] set value 0f
-item replace entity @s armor.head with minecraft:dripstone_block
-data merge entity @s {CanPickUpLoot:0b}
-
-# Stalacs should dismount vehicles in order to hang
-# Due to MC-264022, this isn't possible
-# execute if predicate zombies_evolved:has_vehicle run ride @s dismount
-
-function zombies_evolved:_evolution/_type/_stalac/find_hang_point/_
-execute if entity @s[tag=!zev.artificial] unless predicate zombies_evolved:has_vehicle if data storage zombies_evolved:data func.find_hang_point.out{valid:1b} run function zombies_evolved:_evolution/_type/_stalac/assign/hang/_
-execute if entity @s[tag=zev.artificial] unless predicate zombies_evolved:has_vehicle if data storage zombies_evolved:data func.find_hang_point.out{height:1,valid:1b} run function zombies_evolved:_evolution/_type/_stalac/assign/hang/_
