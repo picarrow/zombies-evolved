@@ -4,7 +4,7 @@
       "id": "minecraft:iron_sword"
     },
     "title": "Brain Rot",
-    "description": "Kill any evolved zombie",
+    "description": "Kill an evolved zombie",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
@@ -12,7 +12,7 @@
   },
   "parent": "zombies_evolved:tab/main/root",
   "criteria": {
-    "function_grant": {
+    "kill_an_evolved_zombie": {
       "trigger": "minecraft:impossible"
     }
   }

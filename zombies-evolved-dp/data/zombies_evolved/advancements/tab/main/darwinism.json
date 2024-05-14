@@ -4,7 +4,7 @@
       "id": "minecraft:rotten_flesh"
     },
     "title": "Darwinism",
-    "description": "Kill two hundred evolved zombies",
+    "description": "Kill two-hundred evolved zombies",
     "frame": "challenge",
     "show_toast": true,
     "announce_to_chat": true,
@@ -12,604 +12,604 @@
   },
   "parent": "zombies_evolved:tab/main/brain_rot",
   "criteria": {
-    "function_grant_1": {
+    "have_evolved_zombie_kill_count_of_at_least_1": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_2": {
+    "have_evolved_zombie_kill_count_of_at_least_2": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_3": {
+    "have_evolved_zombie_kill_count_of_at_least_3": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_4": {
+    "have_evolved_zombie_kill_count_of_at_least_4": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_5": {
+    "have_evolved_zombie_kill_count_of_at_least_5": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_6": {
+    "have_evolved_zombie_kill_count_of_at_least_6": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_7": {
+    "have_evolved_zombie_kill_count_of_at_least_7": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_8": {
+    "have_evolved_zombie_kill_count_of_at_least_8": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_9": {
+    "have_evolved_zombie_kill_count_of_at_least_9": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_10": {
+    "have_evolved_zombie_kill_count_of_at_least_10": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_11": {
+    "have_evolved_zombie_kill_count_of_at_least_11": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_12": {
+    "have_evolved_zombie_kill_count_of_at_least_12": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_13": {
+    "have_evolved_zombie_kill_count_of_at_least_13": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_14": {
+    "have_evolved_zombie_kill_count_of_at_least_14": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_15": {
+    "have_evolved_zombie_kill_count_of_at_least_15": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_16": {
+    "have_evolved_zombie_kill_count_of_at_least_16": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_17": {
+    "have_evolved_zombie_kill_count_of_at_least_17": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_18": {
+    "have_evolved_zombie_kill_count_of_at_least_18": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_19": {
+    "have_evolved_zombie_kill_count_of_at_least_19": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_20": {
+    "have_evolved_zombie_kill_count_of_at_least_20": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_21": {
+    "have_evolved_zombie_kill_count_of_at_least_21": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_22": {
+    "have_evolved_zombie_kill_count_of_at_least_22": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_23": {
+    "have_evolved_zombie_kill_count_of_at_least_23": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_24": {
+    "have_evolved_zombie_kill_count_of_at_least_24": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_25": {
+    "have_evolved_zombie_kill_count_of_at_least_25": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_26": {
+    "have_evolved_zombie_kill_count_of_at_least_26": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_27": {
+    "have_evolved_zombie_kill_count_of_at_least_27": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_28": {
+    "have_evolved_zombie_kill_count_of_at_least_28": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_29": {
+    "have_evolved_zombie_kill_count_of_at_least_29": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_30": {
+    "have_evolved_zombie_kill_count_of_at_least_30": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_31": {
+    "have_evolved_zombie_kill_count_of_at_least_31": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_32": {
+    "have_evolved_zombie_kill_count_of_at_least_32": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_33": {
+    "have_evolved_zombie_kill_count_of_at_least_33": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_34": {
+    "have_evolved_zombie_kill_count_of_at_least_34": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_35": {
+    "have_evolved_zombie_kill_count_of_at_least_35": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_36": {
+    "have_evolved_zombie_kill_count_of_at_least_36": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_37": {
+    "have_evolved_zombie_kill_count_of_at_least_37": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_38": {
+    "have_evolved_zombie_kill_count_of_at_least_38": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_39": {
+    "have_evolved_zombie_kill_count_of_at_least_39": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_40": {
+    "have_evolved_zombie_kill_count_of_at_least_40": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_41": {
+    "have_evolved_zombie_kill_count_of_at_least_41": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_42": {
+    "have_evolved_zombie_kill_count_of_at_least_42": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_43": {
+    "have_evolved_zombie_kill_count_of_at_least_43": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_44": {
+    "have_evolved_zombie_kill_count_of_at_least_44": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_45": {
+    "have_evolved_zombie_kill_count_of_at_least_45": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_46": {
+    "have_evolved_zombie_kill_count_of_at_least_46": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_47": {
+    "have_evolved_zombie_kill_count_of_at_least_47": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_48": {
+    "have_evolved_zombie_kill_count_of_at_least_48": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_49": {
+    "have_evolved_zombie_kill_count_of_at_least_49": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_50": {
+    "have_evolved_zombie_kill_count_of_at_least_50": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_51": {
+    "have_evolved_zombie_kill_count_of_at_least_51": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_52": {
+    "have_evolved_zombie_kill_count_of_at_least_52": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_53": {
+    "have_evolved_zombie_kill_count_of_at_least_53": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_54": {
+    "have_evolved_zombie_kill_count_of_at_least_54": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_55": {
+    "have_evolved_zombie_kill_count_of_at_least_55": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_56": {
+    "have_evolved_zombie_kill_count_of_at_least_56": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_57": {
+    "have_evolved_zombie_kill_count_of_at_least_57": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_58": {
+    "have_evolved_zombie_kill_count_of_at_least_58": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_59": {
+    "have_evolved_zombie_kill_count_of_at_least_59": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_60": {
+    "have_evolved_zombie_kill_count_of_at_least_60": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_61": {
+    "have_evolved_zombie_kill_count_of_at_least_61": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_62": {
+    "have_evolved_zombie_kill_count_of_at_least_62": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_63": {
+    "have_evolved_zombie_kill_count_of_at_least_63": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_64": {
+    "have_evolved_zombie_kill_count_of_at_least_64": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_65": {
+    "have_evolved_zombie_kill_count_of_at_least_65": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_66": {
+    "have_evolved_zombie_kill_count_of_at_least_66": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_67": {
+    "have_evolved_zombie_kill_count_of_at_least_67": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_68": {
+    "have_evolved_zombie_kill_count_of_at_least_68": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_69": {
+    "have_evolved_zombie_kill_count_of_at_least_69": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_70": {
+    "have_evolved_zombie_kill_count_of_at_least_70": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_71": {
+    "have_evolved_zombie_kill_count_of_at_least_71": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_72": {
+    "have_evolved_zombie_kill_count_of_at_least_72": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_73": {
+    "have_evolved_zombie_kill_count_of_at_least_73": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_74": {
+    "have_evolved_zombie_kill_count_of_at_least_74": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_75": {
+    "have_evolved_zombie_kill_count_of_at_least_75": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_76": {
+    "have_evolved_zombie_kill_count_of_at_least_76": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_77": {
+    "have_evolved_zombie_kill_count_of_at_least_77": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_78": {
+    "have_evolved_zombie_kill_count_of_at_least_78": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_79": {
+    "have_evolved_zombie_kill_count_of_at_least_79": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_80": {
+    "have_evolved_zombie_kill_count_of_at_least_80": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_81": {
+    "have_evolved_zombie_kill_count_of_at_least_81": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_82": {
+    "have_evolved_zombie_kill_count_of_at_least_82": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_83": {
+    "have_evolved_zombie_kill_count_of_at_least_83": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_84": {
+    "have_evolved_zombie_kill_count_of_at_least_84": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_85": {
+    "have_evolved_zombie_kill_count_of_at_least_85": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_86": {
+    "have_evolved_zombie_kill_count_of_at_least_86": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_87": {
+    "have_evolved_zombie_kill_count_of_at_least_87": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_88": {
+    "have_evolved_zombie_kill_count_of_at_least_88": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_89": {
+    "have_evolved_zombie_kill_count_of_at_least_89": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_90": {
+    "have_evolved_zombie_kill_count_of_at_least_90": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_91": {
+    "have_evolved_zombie_kill_count_of_at_least_91": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_92": {
+    "have_evolved_zombie_kill_count_of_at_least_92": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_93": {
+    "have_evolved_zombie_kill_count_of_at_least_93": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_94": {
+    "have_evolved_zombie_kill_count_of_at_least_94": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_95": {
+    "have_evolved_zombie_kill_count_of_at_least_95": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_96": {
+    "have_evolved_zombie_kill_count_of_at_least_96": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_97": {
+    "have_evolved_zombie_kill_count_of_at_least_97": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_98": {
+    "have_evolved_zombie_kill_count_of_at_least_98": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_99": {
+    "have_evolved_zombie_kill_count_of_at_least_99": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_100": {
+    "have_evolved_zombie_kill_count_of_at_least_100": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_101": {
+    "have_evolved_zombie_kill_count_of_at_least_101": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_102": {
+    "have_evolved_zombie_kill_count_of_at_least_102": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_103": {
+    "have_evolved_zombie_kill_count_of_at_least_103": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_104": {
+    "have_evolved_zombie_kill_count_of_at_least_104": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_105": {
+    "have_evolved_zombie_kill_count_of_at_least_105": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_106": {
+    "have_evolved_zombie_kill_count_of_at_least_106": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_107": {
+    "have_evolved_zombie_kill_count_of_at_least_107": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_108": {
+    "have_evolved_zombie_kill_count_of_at_least_108": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_109": {
+    "have_evolved_zombie_kill_count_of_at_least_109": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_110": {
+    "have_evolved_zombie_kill_count_of_at_least_110": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_111": {
+    "have_evolved_zombie_kill_count_of_at_least_111": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_112": {
+    "have_evolved_zombie_kill_count_of_at_least_112": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_113": {
+    "have_evolved_zombie_kill_count_of_at_least_113": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_114": {
+    "have_evolved_zombie_kill_count_of_at_least_114": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_115": {
+    "have_evolved_zombie_kill_count_of_at_least_115": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_116": {
+    "have_evolved_zombie_kill_count_of_at_least_116": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_117": {
+    "have_evolved_zombie_kill_count_of_at_least_117": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_118": {
+    "have_evolved_zombie_kill_count_of_at_least_118": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_119": {
+    "have_evolved_zombie_kill_count_of_at_least_119": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_120": {
+    "have_evolved_zombie_kill_count_of_at_least_120": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_121": {
+    "have_evolved_zombie_kill_count_of_at_least_121": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_122": {
+    "have_evolved_zombie_kill_count_of_at_least_122": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_123": {
+    "have_evolved_zombie_kill_count_of_at_least_123": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_124": {
+    "have_evolved_zombie_kill_count_of_at_least_124": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_125": {
+    "have_evolved_zombie_kill_count_of_at_least_125": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_126": {
+    "have_evolved_zombie_kill_count_of_at_least_126": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_127": {
+    "have_evolved_zombie_kill_count_of_at_least_127": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_128": {
+    "have_evolved_zombie_kill_count_of_at_least_128": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_129": {
+    "have_evolved_zombie_kill_count_of_at_least_129": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_130": {
+    "have_evolved_zombie_kill_count_of_at_least_130": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_131": {
+    "have_evolved_zombie_kill_count_of_at_least_131": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_132": {
+    "have_evolved_zombie_kill_count_of_at_least_132": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_133": {
+    "have_evolved_zombie_kill_count_of_at_least_133": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_134": {
+    "have_evolved_zombie_kill_count_of_at_least_134": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_135": {
+    "have_evolved_zombie_kill_count_of_at_least_135": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_136": {
+    "have_evolved_zombie_kill_count_of_at_least_136": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_137": {
+    "have_evolved_zombie_kill_count_of_at_least_137": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_138": {
+    "have_evolved_zombie_kill_count_of_at_least_138": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_139": {
+    "have_evolved_zombie_kill_count_of_at_least_139": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_140": {
+    "have_evolved_zombie_kill_count_of_at_least_140": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_141": {
+    "have_evolved_zombie_kill_count_of_at_least_141": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_142": {
+    "have_evolved_zombie_kill_count_of_at_least_142": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_143": {
+    "have_evolved_zombie_kill_count_of_at_least_143": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_144": {
+    "have_evolved_zombie_kill_count_of_at_least_144": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_145": {
+    "have_evolved_zombie_kill_count_of_at_least_145": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_146": {
+    "have_evolved_zombie_kill_count_of_at_least_146": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_147": {
+    "have_evolved_zombie_kill_count_of_at_least_147": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_148": {
+    "have_evolved_zombie_kill_count_of_at_least_148": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_149": {
+    "have_evolved_zombie_kill_count_of_at_least_149": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_150": {
+    "have_evolved_zombie_kill_count_of_at_least_150": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_151": {
+    "have_evolved_zombie_kill_count_of_at_least_151": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_152": {
+    "have_evolved_zombie_kill_count_of_at_least_152": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_153": {
+    "have_evolved_zombie_kill_count_of_at_least_153": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_154": {
+    "have_evolved_zombie_kill_count_of_at_least_154": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_155": {
+    "have_evolved_zombie_kill_count_of_at_least_155": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_156": {
+    "have_evolved_zombie_kill_count_of_at_least_156": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_157": {
+    "have_evolved_zombie_kill_count_of_at_least_157": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_158": {
+    "have_evolved_zombie_kill_count_of_at_least_158": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_159": {
+    "have_evolved_zombie_kill_count_of_at_least_159": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_160": {
+    "have_evolved_zombie_kill_count_of_at_least_160": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_161": {
+    "have_evolved_zombie_kill_count_of_at_least_161": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_162": {
+    "have_evolved_zombie_kill_count_of_at_least_162": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_163": {
+    "have_evolved_zombie_kill_count_of_at_least_163": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_164": {
+    "have_evolved_zombie_kill_count_of_at_least_164": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_165": {
+    "have_evolved_zombie_kill_count_of_at_least_165": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_166": {
+    "have_evolved_zombie_kill_count_of_at_least_166": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_167": {
+    "have_evolved_zombie_kill_count_of_at_least_167": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_168": {
+    "have_evolved_zombie_kill_count_of_at_least_168": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_169": {
+    "have_evolved_zombie_kill_count_of_at_least_169": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_170": {
+    "have_evolved_zombie_kill_count_of_at_least_170": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_171": {
+    "have_evolved_zombie_kill_count_of_at_least_171": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_172": {
+    "have_evolved_zombie_kill_count_of_at_least_172": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_173": {
+    "have_evolved_zombie_kill_count_of_at_least_173": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_174": {
+    "have_evolved_zombie_kill_count_of_at_least_174": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_175": {
+    "have_evolved_zombie_kill_count_of_at_least_175": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_176": {
+    "have_evolved_zombie_kill_count_of_at_least_176": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_177": {
+    "have_evolved_zombie_kill_count_of_at_least_177": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_178": {
+    "have_evolved_zombie_kill_count_of_at_least_178": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_179": {
+    "have_evolved_zombie_kill_count_of_at_least_179": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_180": {
+    "have_evolved_zombie_kill_count_of_at_least_180": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_181": {
+    "have_evolved_zombie_kill_count_of_at_least_181": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_182": {
+    "have_evolved_zombie_kill_count_of_at_least_182": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_183": {
+    "have_evolved_zombie_kill_count_of_at_least_183": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_184": {
+    "have_evolved_zombie_kill_count_of_at_least_184": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_185": {
+    "have_evolved_zombie_kill_count_of_at_least_185": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_186": {
+    "have_evolved_zombie_kill_count_of_at_least_186": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_187": {
+    "have_evolved_zombie_kill_count_of_at_least_187": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_188": {
+    "have_evolved_zombie_kill_count_of_at_least_188": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_189": {
+    "have_evolved_zombie_kill_count_of_at_least_189": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_190": {
+    "have_evolved_zombie_kill_count_of_at_least_190": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_191": {
+    "have_evolved_zombie_kill_count_of_at_least_191": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_192": {
+    "have_evolved_zombie_kill_count_of_at_least_192": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_193": {
+    "have_evolved_zombie_kill_count_of_at_least_193": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_194": {
+    "have_evolved_zombie_kill_count_of_at_least_194": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_195": {
+    "have_evolved_zombie_kill_count_of_at_least_195": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_196": {
+    "have_evolved_zombie_kill_count_of_at_least_196": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_197": {
+    "have_evolved_zombie_kill_count_of_at_least_197": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_198": {
+    "have_evolved_zombie_kill_count_of_at_least_198": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_199": {
+    "have_evolved_zombie_kill_count_of_at_least_199": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_200": {
+    "have_evolved_zombie_kill_count_of_at_least_200": {
       "trigger": "minecraft:impossible"
     }
   }

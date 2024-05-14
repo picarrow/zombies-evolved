@@ -12,13 +12,13 @@
   },
   "parent": "zombies_evolved:tab/main/brain_rot",
   "criteria": {
-    "function_grant_1": {
+    "kill_a_jacky": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_2": {
+    "kill_a_shrieker": {
       "trigger": "minecraft:impossible"
     },
-    "function_grant_3": {
+    "kill_a_stalac": {
       "trigger": "minecraft:impossible"
     }
   }

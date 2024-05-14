@@ -3,6 +3,8 @@
 # This objective tracks variables and constants
 scoreboard objectives add zev._ dummy
 
+scoreboard players set #advancement.tab.main.darwinism.criteria_check_loop zev._ 0
+
 # Sets the default settings configuration
 function zombies_evolved:_settings/set_defaults/_
 
@@ -11,7 +13,7 @@ scoreboard objectives add zev.crumble_guider.age dummy
 scoreboard objectives add zev.jacky.lit_time dummy
 scoreboard objectives add zev.player.adv_cz_has_died deathCount
 scoreboard objectives add zev.player.adv_cz_must_survive_time dummy
-scoreboard objectives add zev.player.adv_dw_kills dummy
+scoreboard objectives add zev.advancement.tab.main.darwinism.kills dummy
 scoreboard objectives add zev.shrieker.shriek_time dummy
 scoreboard objectives add zev.shrieker.warning dummy
 scoreboard objectives add zev.stalac.phase_time dummy
