@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "mob_equip:load",
-    "zombies_evolved:load"
+    "mob_equip:load/_",
+    "zombies_evolved:load/_"
   ]
 }

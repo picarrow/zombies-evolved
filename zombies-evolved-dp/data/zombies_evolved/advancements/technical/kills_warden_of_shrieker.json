@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "zombies_evolved:event/player_kills_warden_of_shrieker"
+    "function": "zombies_evolved:_advancement/_technical/_player_kills_warden_of_shrieker/reward/_"
   }
 }

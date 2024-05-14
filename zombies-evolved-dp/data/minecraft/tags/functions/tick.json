@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "zombies_evolved:tick"
+    "zombies_evolved:tick/_"
   ]
 }

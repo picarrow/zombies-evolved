@@ -54,6 +54,6 @@
     ]
   ],
   "rewards": {
-    "function": "zombies_evolved:event/player_kills_evolved_zombie"
+    "function": "zombies_evolved:_advancement/_technical/_player_kills_evolved_zombie/reward/_"
   }
 }

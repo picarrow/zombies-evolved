@@ -17,7 +17,7 @@ execute unless data storage mob_equip:equip_if_better root.in.ignore_slots.head 
 execute unless data storage mob_equip:equip_if_better root.in.ignore_slots.mainhand if score #_slot meq._ matches -1 run scoreboard players set #_slot meq._ 0
 
 # Proceeds if there is a valid slot for the input item
-execute unless score #_slot meq._ matches -1 run function mob_equip:equip_if_better/_2
+execute unless score #_slot meq._ matches -1 run function mob_equip:equip_if_better/_11
 
 # Merges the stored entity NBT back into the entity
 data modify entity @s {} merge from storage mob_equip:equip_if_better temp.entity

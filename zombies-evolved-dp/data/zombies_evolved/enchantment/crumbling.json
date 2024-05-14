@@ -36,7 +36,7 @@
       {
         "effect": {
           "type": "minecraft:run_function",
-          "function": "zombies_evolved:enchantment/crumbling/crumble/_"
+          "function": "zombies_evolved:_enchantment/_crumbling/crumble/_"
         },
         "requirements": {
           "condition": "minecraft:entity_properties",

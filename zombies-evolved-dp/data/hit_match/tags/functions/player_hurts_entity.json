@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "zombies_evolved:event/entity_hit_matching/target_is_hurt_by_player"
+    "zombies_evolved:_hit_match/player_hurts_entity/_"
   ]
 }
