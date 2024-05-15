@@ -12,6 +12,9 @@ execute as @e[tag=zev.stalac_spawn_egg_marker] at @s run function zombies_evolve
 # Crumble Guiders
 execute as @e[tag=zev.crumble_guider] at @s run function zombies_evolved:_entity/_crumble_guider/tick/_
 
+# Nametag Hiders
+kill @e[tag=zev.nametag_hider,predicate=!zombies_evolved:has_vehicle]
+
 # Players
 execute as @a at @s run function zombies_evolved:_entity/_player/tick/_
 

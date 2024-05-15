@@ -9,4 +9,11 @@ data modify storage zombies_evolved:data _.func.evolution.jacky.assign.temp.enti
 data modify storage zombies_evolved:data _.func.evolution.jacky.assign.temp.entity_data.Tags append value "zev.jacky"
 data modify storage zombies_evolved:data _.func.evolution.jacky.assign.temp.entity_data.Tags append value "zev.evolved"
 
+data modify storage zombies_evolved:data _.func.evolution.jacky.assign.temp.entity_data.Tags append value "zev._self"
+
 data modify entity @s {} merge from storage zombies_evolved:data _.func.evolution.jacky.assign.temp.entity_data
+
+data modify storage zombies_evolved:data _.func.evolution.jacky.assign.temp set value {}
+
+execute summon minecraft:text_display run function zombies_evolved:_evolution/init_nametag_hider/_
+tag @s remove zev._self
