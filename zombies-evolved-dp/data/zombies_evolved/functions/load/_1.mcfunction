@@ -20,4 +20,4 @@ scoreboard objectives add zev.stalac.phase_time dummy
 scoreboard objectives add zev.crumble_guider.age dummy
 
 # Indicate the namespace has been initialized
-data modify storage zombies_evolved:data root.loaded set value 1b
+data modify storage zombies_evolved:data _.loaded set value {}
