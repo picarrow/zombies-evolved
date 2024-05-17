@@ -4,10 +4,8 @@
 advancement grant @a only zombies_evolved:tab/main/root just_exist
 function zombies_evolved:_advancement/_tab/_main/_darwinism/all_player_criteria_checking/_
 
-# Evolved-Zombie Spawn-Egg Markers
-execute as @e[tag=zev.jacky_spawn_egg_marker] at @s run function zombies_evolved:_entity/_spawn_egg_marker/tick/_ {evolution:"jacky"}
-execute as @e[tag=zev.shrieker_spawn_egg_marker] at @s run function zombies_evolved:_entity/_spawn_egg_marker/tick/_ {evolution:"shrieker"}
-execute as @e[tag=zev.stalac_spawn_egg_marker] at @s run function zombies_evolved:_entity/_spawn_egg_marker/tick/_ {evolution:"stalac"}
+# Spawn Egg Placers
+execute if entity @e[tag=zev.placer.active,limit=1] run function zombies_evolved:tick/_1
 
 # Crumble Guiders
 execute as @e[tag=zev.crumble_guider] at @s run function zombies_evolved:_entity/_crumble_guider/tick/_
