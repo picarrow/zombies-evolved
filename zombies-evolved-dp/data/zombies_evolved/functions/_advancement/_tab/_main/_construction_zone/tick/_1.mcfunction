@@ -1,11 +1,10 @@
 ## AUTHOR : Picarrow
 
-# Ticks the clock
-scoreboard players remove @s zev.player.advancement.main.construction_zone.must_survive_time 1
+# Cancel the clock if the player died
+execute if score @s zev.advancement.tab.main.construction_zone.deaths matches 1.. run return run function zombies_evolved:_advancement/_tab/_main/_construction_zone/tick/_11
 
-# Cancels the clock if the player died
-execute if score @s zev.player.advancement.main.construction_zone.has_died matches 1.. run scoreboard players reset @s zev.player.advancement.main.construction_zone.must_survive_time
-execute if score @s zev.player.advancement.main.construction_zone.has_died matches 1.. run scoreboard players reset @s zev.player.advancement.main.construction_zone.has_died
+# Reward the criterion when the clock hits 0
+execute if score @s zev.advancement.tab.main.construction_zone.must_survive_time matches 0 run return run function zombies_evolved:_advancement/_tab/_main/_construction_zone/tick/_12
 
-# Awards the advancement 'construction_zone' from tab 'main' to the player if they survived
-execute if score @s zev.player.advancement.main.construction_zone.must_survive_time matches 0 run advancement grant @s only zombies_evolved:tab/main/construction_zone
+# Tick the clock
+scoreboard players remove @s zev.advancement.tab.main.construction_zone.must_survive_time 1

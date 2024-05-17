@@ -12,7 +12,7 @@
   },
   "parent": "zombies_evolved:tab/main/root",
   "criteria": {
-    "function_grant": {
+    "withstood_damage_dealt_by_a_stalac_stalactite": {
       "trigger": "minecraft:impossible"
     }
   }
