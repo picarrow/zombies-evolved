@@ -1,18 +1,19 @@
 ## AUTHOR : Picarrow
 
-# Stores the player's NBT for efficient access
-data modify storage zombies_evolved:pilfer temp.player set from entity @s {}
+# Look to steal an unequipped item from the ENTCON, if there aren't any grab-bag
+# contents but there are inventory contents.
+execute unless data storage zombies_evolved:data _.func.ability.pilfer.temp.grab_bag run return run execute if data storage zombies_evolved:data _.func.ability.pilfer.temp.player.Inventory[0] run function zombies_evolved:_ability/pilfer/_11
 
-# Places the player's equipped items into a list
-data modify storage zombies_evolved:pilfer temp.grab_bag append from storage zombies_evolved:pilfer temp.player.SelectedItem
-data modify storage zombies_evolved:pilfer temp.grab_bag append from storage zombies_evolved:pilfer temp.player.Inventory[{Slot:-106b}]
-data modify storage zombies_evolved:pilfer temp.grab_bag append from storage zombies_evolved:pilfer temp.player.Inventory[{Slot:100b}]
-data modify storage zombies_evolved:pilfer temp.grab_bag append from storage zombies_evolved:pilfer temp.player.Inventory[{Slot:101b}]
-data modify storage zombies_evolved:pilfer temp.grab_bag append from storage zombies_evolved:pilfer temp.player.Inventory[{Slot:102b}]
-data modify storage zombies_evolved:pilfer temp.grab_bag append from storage zombies_evolved:pilfer temp.player.Inventory[{Slot:103b}]
+# Choose a random grab-bag index.
+execute store result score #_max_index zev._ if data storage zombies_evolved:data _.func.ability.pilfer.temp.grab_bag[]
+execute store result storage zombies_evolved:data _.func.ability.pilfer.temp.index byte 1 run function zombies_evolved:_ability/pilfer/get_random_index/_
 
-# If there are equipped items, take one randomly
-execute if data storage zombies_evolved:pilfer temp.grab_bag run function zombies_evolved:_ability/pilfer/_11
+# Store the item at the chosen grab-bag index and the corresponding inventory slot
+# of the item.
+execute store result storage zombies_evolved:data _.func.ability.pilfer.temp.slot byte 1 run function zombies_evolved:_ability/pilfer/_12 with storage zombies_evolved:data _.func.ability.pilfer.temp
 
-# If none, take a random unequipped item
-execute unless data storage zombies_evolved:pilfer temp.grab_bag if data storage zombies_evolved:pilfer temp.player.Inventory[0] run function zombies_evolved:_ability/pilfer/_12
+# Store the corresponding slot alias of the item.
+function zombies_evolved:_ability/pilfer/get_slot_alias/_ with storage zombies_evolved:data _.func.ability.pilfer.temp
+
+# Delete the item in the chosen slot.
+function zombies_evolved:_ability/pilfer/delete_from_inventory/_ with storage zombies_evolved:data _.func.ability.pilfer.temp
