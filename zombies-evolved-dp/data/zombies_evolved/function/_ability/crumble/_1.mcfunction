@@ -1,11 +1,11 @@
 ## AUTHOR : Picarrow
 
 # Determine dx and dz
-execute store result storage zombies_evolved:_ _.func.crumble.temp.max int 1 run scoreboard players remove #_positions_left zev._ 1
-function zombies_evolved:_ability/crumble/_11 with storage zombies_evolved:_ _.func.crumble.temp
-function zombies_evolved:_ability/crumble/_12 with storage zombies_evolved:_ _.func.crumble.temp
-execute store result score #_dx zev._ run data get storage zombies_evolved:_ _.func.crumble.temp.position[0]
-execute store result score #_dz zev._ run data get storage zombies_evolved:_ _.func.crumble.temp.position[1]
+execute store result storage zombies_evolved:data _.func.ability.crumble.temp.max int 1 run scoreboard players remove #_positions_left zev._ 1
+function zombies_evolved:_ability/crumble/_11 with storage zombies_evolved:data _.func.ability.crumble.temp
+function zombies_evolved:_ability/crumble/_12 with storage zombies_evolved:data _.func.ability.crumble.temp
+execute store result score #_dx zev._ run data get storage zombies_evolved:data _.func.ability.crumble.temp.position[0]
+execute store result score #_dz zev._ run data get storage zombies_evolved:data _.func.ability.crumble.temp.position[1]
 
 # Proceed with the help of a marker
 execute summon minecraft:marker run function zombies_evolved:_ability/crumble/_13
