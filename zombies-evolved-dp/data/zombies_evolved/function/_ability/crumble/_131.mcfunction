@@ -1,3 +1,3 @@
 ## AUTHOR : Picarrow
 
-$teleport @s ~$(dx) ~-3 ~$(dz)
+$teleport @s ~$(dx) ~-3 ~$(dz) ~ ~
