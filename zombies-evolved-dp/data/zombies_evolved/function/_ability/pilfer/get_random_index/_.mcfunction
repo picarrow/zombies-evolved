@@ -1,5 +1,6 @@
 ## AUTHOR : Picarrow
 
-execute if score #_max_index zev._ matches 1 run return 0
-execute store result storage zombies_evolved:data _.func.ability.pilfer.temp.max_index int 1 run scoreboard players remove #_max_index zev._ 1
-return run function zombies_evolved:_ability/pilfer/get_random_index/_1 with storage zombies_evolved:data _.func.ability.pilfer.temp
+# Note: This command fails when the max index is 0 (grab bag zie is 1). A command
+# that fails happens to return 0, which fortunately, in this case, is the result
+# expected from the given inputs.
+$return run random value 0..$(max_index)

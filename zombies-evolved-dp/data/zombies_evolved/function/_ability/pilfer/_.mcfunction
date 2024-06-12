@@ -25,5 +25,5 @@ function zombies_evolved:_ability/pilfer/_1
 # item.
 execute on attacker run function zombies_evolved:_ability/pilfer/_2
 
-# Delete the temp data
+# Delete the temp data.
 data remove storage zombies_evolved:data _.func.ability.pilfer.temp
