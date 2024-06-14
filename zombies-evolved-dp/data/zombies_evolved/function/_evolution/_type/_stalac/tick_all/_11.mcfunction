@@ -2,9 +2,9 @@
 
 execute unless score @s zev.stalac.phase_time matches 0.. run scoreboard players set @s zev.stalac.phase_time 6
 
-execute if score @s zev.stalac.phase_time matches 6 run tag @e[type=minecraft:player,gamemode=!spectator,sort=nearest,limit=1] add zev._candidate
-execute if score @s zev.stalac.phase_time matches 6 run tag @e[type=minecraft:villager,sort=nearest,limit=1] add zev._candidate
-teleport @s[scores={zev.stalac.phase_time=6}] ~ ~ ~ facing entity @e[tag=zev._candidate,sort=nearest,limit=1] eyes
+execute if score @s zev.stalac.phase_time matches 6 run tag @n[gamemode=!spectator] add zev._candidate
+execute if score @s zev.stalac.phase_time matches 6 run tag @n[type=minecraft:villager] add zev._candidate
+teleport @s[scores={zev.stalac.phase_time=6}] ~ ~ ~ facing entity @n[tag=zev._candidate] eyes
 execute if score @s zev.stalac.phase_time matches 6 run tag @e[tag=zev._candidate] remove zev._candidate
 
 execute if entity @s[scores={zev.stalac.phase_time=4},predicate=!zombies_evolved:is_baby] unless block ~ ~2 ~ #zombies_evolved:stalac_can_hang_on run function zombies_evolved:_evolution/_type/_stalac/fall/_
