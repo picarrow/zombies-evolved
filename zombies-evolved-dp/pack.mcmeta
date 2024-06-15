@@ -1,6 +1,10 @@
 {
   "pack": {
-    "pack_format": 15,
-    "description": "\u00A7aZombies Evolved \u00A7bv0.4.0"
+    "description": "\u00A7aZombies Evolved v1.0.0 \u00A77by \u00A7fPicarrow",
+    "pack_format": 48,
+    "supported_formats": {
+        "min_inclusive": 48,
+        "max_inclusive": 48
+    }
   }
 }

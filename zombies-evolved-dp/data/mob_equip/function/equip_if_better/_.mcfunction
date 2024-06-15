@@ -12,7 +12,7 @@
 # Initialize the output
 data modify storage mob_equip:data _.func.equip_if_better.out set value {}
 
-# Store the ENTCON's NBT into memory
+# Store the ENTCON's NBT for efficient access
 data modify storage mob_equip:data _.func.equip_if_better.temp.entity set from entity @s
 
 # Equip the new item into the ENTCON's mainhand, so it can be judged using slot

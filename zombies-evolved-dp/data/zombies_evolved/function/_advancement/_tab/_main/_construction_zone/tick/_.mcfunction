@@ -3,7 +3,7 @@
 ## ENTCON : ---
 ## POSCON : ---
 ##  INPUT : ---
-##        :
+## OUTPUT : ---
 ## EFFECT : Grants criterion 'withstood_damage_dealt_by_a_stalac_stalactite' to
 ##          all players who survive the survival clock.
 

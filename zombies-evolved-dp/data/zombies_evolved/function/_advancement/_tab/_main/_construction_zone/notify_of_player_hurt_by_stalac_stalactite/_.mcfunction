@@ -1,14 +1,14 @@
 ## AUTHOR : Picarrow
 ##        :
-## ENTCON : The player that was hurt by a stalac's stalactite.
+## ENTCON : A player that is being hurt by a stalac's stalactite.
 ## POSCON : ---
 ##  INPUT : ---
-##        :
+## OUTPUT : ---
 ## EFFECT : Starts a 2-second survival clock that determines whether the player
 ##          is eligible to earn criterion 'withstood_damage_dealt_by_a_stalac_stalactite'.
 ##          If the player is already dead or dies over the course of the clock,
 ##          the clock is canceled and the player is no longer eligible.
-## OUTPUT : ---
+
 
 # Start a 2-second survival clock if the player is alive
 # The survival clock checks eligibility to earn criterion 'withstood_damage_dealt_by_a_stalac_stalactite'
