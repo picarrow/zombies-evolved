@@ -5,7 +5,7 @@
 # ride @s[predicate=zombies_evolved:has_vehicle] dismount
 
 # Teleport the stalac to the hang point
-data modify storage zombies_evolved:data _.func.evolution.stalac.assign.temp.entity_data.Pos set from storage zombies_evolved:data func.find_hang_point.out.hang_point
+data modify storage zombies_evolved:data _.func.evolution.stalac.assign.temp.entity_data.Pos set from storage zombies_evolved:data _.func.evolution.stalac.find_hang_point.out.hang_point
 
 # Offset the stalac downwards in respect to its height
 execute store result score #_y zev._ run data get storage zombies_evolved:data _.func.evolution.stalac.assign.temp.entity_data.Pos[1] 1000
