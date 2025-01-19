@@ -1,4 +1,4 @@
-# Zombies Evolved v1.0.0
+# Zombies Evolved v1.0.1
 
 ## 🟧 About
 &nbsp;&nbsp;&nbsp;&nbsp;Zombies Evolved is a data pack that seeks to provide players with a uniquely arduous challenge while also maintaining Minecraft's beloved feel and freedom.
