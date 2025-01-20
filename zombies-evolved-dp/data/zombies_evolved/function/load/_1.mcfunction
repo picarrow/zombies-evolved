@@ -20,7 +20,7 @@ scoreboard objectives add zev.stalac.phase_time dummy
 scoreboard objectives add zev.crumble_guider.age dummy
 
 # Store the map that serves as reference for the pilfer ability
-data modify storage zombies_evolved:data _.func.ability.pilfer.lookup.slot_alias_map set value { \
+data modify storage zombies_evolved:data _.func."ability.pilfer".lookup.slot_alias_map set value { \
   -106: "weapon.offhand", \
   0: "hotbar.0", \
   1: "hotbar.1", \

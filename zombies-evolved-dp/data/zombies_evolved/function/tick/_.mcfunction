@@ -21,5 +21,5 @@ function zombies_evolved:_evolution/_type/_stalac/tick_all/_
 kill @e[tag=zev.nametag_hider,predicate=!zombies_evolved:has_vehicle]
 
 # Update crumble guiders.
-data modify storage zombies_evolved:data _.func.entity.crumble_guider.tick_all.in set value {tags:["zev.stalac_stalactite"]}
+data modify storage zombies_evolved:data _.func."entity.crumble_guider.tick_all".in set value {tags:["zev.stalac_stalactite"]}
 function zombies_evolved:_entity/_crumble_guider/tick_all/_
