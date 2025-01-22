@@ -13,7 +13,7 @@ function zombies_evolved:_evolution/_type/_stalac/assign/_21
 execute store result storage zombies_evolved:data _.func."evolution.stalac.assign".temp.entity_data.Pos[1] double 0.001 run scoreboard players get #_y zev._
 
 # Flip stalac upside down, remove physics from it, and silence it
-data modify storage zombies_evolved:data _.func."evolution.stalac.assign".temp.entity_data merge value {CustomName:'{"text":"Grumm"}',NoAI:1b,Silent:1b}
+data modify storage zombies_evolved:data _.func."evolution.stalac.assign".temp.entity_data merge value {CustomName:{"text":"Grumm"},NoAI:1b,Silent:1b}
 
 # Record new hanging state into tags
 data modify storage zombies_evolved:data _.func."evolution.stalac.assign".temp.entity_data.Tags append value "zev.stalac.hanging"
