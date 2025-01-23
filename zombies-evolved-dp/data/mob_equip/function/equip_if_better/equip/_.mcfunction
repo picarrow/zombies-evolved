@@ -1,18 +1,18 @@
 ## AUTHOR : Picarrow
 
 # Place the new item into the slot it belongs to
-execute if score #_desired_slot meq._ matches 5 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.HandItems[0] set from storage mob_equip:data _.func.equip_if_better.in.new_item
-execute if score #_desired_slot meq._ matches 1 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.ArmorItems[0] set from storage mob_equip:data _.func.equip_if_better.in.new_item
-execute if score #_desired_slot meq._ matches 2 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.ArmorItems[1] set from storage mob_equip:data _.func.equip_if_better.in.new_item
-execute if score #_desired_slot meq._ matches 3 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.ArmorItems[2] set from storage mob_equip:data _.func.equip_if_better.in.new_item
-execute if score #_desired_slot meq._ matches 4 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.ArmorItems[3] set from storage mob_equip:data _.func.equip_if_better.in.new_item
+execute if score #_desired_slot meq._ matches 5 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.equipment.mainhand set from storage mob_equip:data _.func.equip_if_better.in.new_item
+execute if score #_desired_slot meq._ matches 1 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.equipment.feet set from storage mob_equip:data _.func.equip_if_better.in.new_item
+execute if score #_desired_slot meq._ matches 2 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.equipment.legs set from storage mob_equip:data _.func.equip_if_better.in.new_item
+execute if score #_desired_slot meq._ matches 3 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.equipment.chest set from storage mob_equip:data _.func.equip_if_better.in.new_item
+execute if score #_desired_slot meq._ matches 4 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.equipment.head set from storage mob_equip:data _.func.equip_if_better.in.new_item
 
 # Set the slot with the new item to have a 100% drop chance
-execute if score #_desired_slot meq._ matches 5 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.HandDropChances[0] set value 2f
-execute if score #_desired_slot meq._ matches 1 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.ArmorDropChances[0] set value 2f
-execute if score #_desired_slot meq._ matches 2 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.ArmorDropChances[1] set value 2f
-execute if score #_desired_slot meq._ matches 3 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.ArmorDropChances[2] set value 2f
-execute if score #_desired_slot meq._ matches 4 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.ArmorDropChances[3] set value 2f
+execute if score #_desired_slot meq._ matches 5 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.drop_chances.mainhand set value 2f
+execute if score #_desired_slot meq._ matches 1 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.drop_chances.feet set value 2f
+execute if score #_desired_slot meq._ matches 2 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.drop_chances.legs set value 2f
+execute if score #_desired_slot meq._ matches 3 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.drop_chances.chest set value 2f
+execute if score #_desired_slot meq._ matches 4 run data modify storage mob_equip:data _.func.equip_if_better.temp.entity.drop_chances.head set value 2f
 
 # Prohibit the entity from despawning in the future
 data modify storage mob_equip:data _.func.equip_if_better.temp.entity.PersistenceRequired set value 1b

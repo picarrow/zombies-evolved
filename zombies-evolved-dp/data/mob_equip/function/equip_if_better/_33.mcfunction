@@ -7,7 +7,8 @@ scoreboard players set #_desired_slot meq._ 5
 scoreboard players set #_tier_of_new meq._ 1
 
 # Set the old item to be evaluated
-data modify storage mob_equip:data _.func.equip_if_better.temp.entity.item_to_eval set from storage mob_equip:data _.func.equip_if_better.temp.entity.HandItems[0]
+data modify storage mob_equip:data _.func.equip_if_better.temp.item_to_eval set value {}
+data modify storage mob_equip:data _.func.equip_if_better.temp.entity.item_to_eval set from storage mob_equip:data _.func.equip_if_better.temp.entity.equipment.mainhand
 
 # Determine properties of the old item
 execute store result score #_tier_of_old meq._ run function mob_equip:equip_if_better/eval_tier/_

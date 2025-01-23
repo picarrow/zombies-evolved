@@ -4,11 +4,11 @@
 scoreboard objectives add meq._ dummy
 
 data modify storage mob_equip:data _.func.equip_if_better.lookup.slot_nbtloc_map set value { \
-  1: "ArmorItems[0]",                                                                        \
-  2: "ArmorItems[1]",                                                                        \
-  3: "ArmorItems[2]",                                                                        \
-  4: "ArmorItems[3]",                                                                        \
-  5: "HandItems[0]"                                                                          \
+  1: "feet",                                                                                 \
+  2: "legs",                                                                                 \
+  3: "chest",                                                                                \
+  4: "head",                                                                                 \
+  5: "mainhand"                                                                              \
 }
 
 data modify storage mob_equip:data _.func.equip_if_better.common.tool_tier_map set value { \

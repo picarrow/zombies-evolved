@@ -1,6 +1,7 @@
 ## AUTHOR : Picarrow
 ##        :
-## ENTCON : An entity that has NBT for HandItems and ArmorItems.
+## ENTCON : A non-player entity that supports head, chest, legs, feet, and mainhand
+##          equipment.
 ## POSCON : ---
 ##  INPUT : {new_item, ignore_slots.mainhand, ignore_slots.feet, ignore_slots.legs,
 ##          ignore_slots.chest, ignore_slots.head}
@@ -28,7 +29,9 @@ execute store result score #_desired_slot meq._ run function mob_equip:equip_if_
 execute if score #_desired_slot meq._ matches 1..5 run function mob_equip:equip_if_better/_3
 
 # Merge the stored ENTCON's NBT back into the entity
-data modify entity @s {} merge from storage mob_equip:data _.func.equip_if_better.temp.entity
+data modify entity @s equipment set from storage mob_equip:data _.func.equip_if_better.temp.entity.equipment
+data modify entity @s drop_chances set from storage mob_equip:data _.func.equip_if_better.temp.entity.drop_chances
+data modify entity @s PersistenceRequired set from storage mob_equip:data _.func.equip_if_better.temp.entity.PersistenceRequired
 
 # Delete the temp data
 data remove storage mob_equip:data _.func.equip_if_better.temp

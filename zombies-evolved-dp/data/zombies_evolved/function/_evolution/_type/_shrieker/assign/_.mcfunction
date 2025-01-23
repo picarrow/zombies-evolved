@@ -1,8 +1,8 @@
 ## AUTHOR : Picarrow
 
 data modify storage zombies_evolved:data _.func."evolution.shrieker.assign".temp.entity_data set from entity @s
-data modify storage zombies_evolved:data _.func."evolution.shrieker.assign".temp.entity_data.ArmorItems[3] set value {id:"minecraft:sculk_shrieker"}
-data modify storage zombies_evolved:data _.func."evolution.shrieker.assign".temp.entity_data.ArmorDropChances[3] set value 0f
+data modify storage zombies_evolved:data _.func."evolution.shrieker.assign".temp.entity_data.equipment.head set value {id:"minecraft:sculk_shrieker"}
+data modify storage zombies_evolved:data _.func."evolution.shrieker.assign".temp.entity_data.drop_chances.head set value 0f
 data modify storage zombies_evolved:data _.func."evolution.shrieker.assign".temp.entity_data merge value {CustomName:{"text":"Shrieker"},CanPickUpLoot:0b}
 
 # Record new evolution type state into tags
