@@ -1,25 +1,3 @@
 ## AUTHOR : Picarrow
 
-$loot replace entity @s weapon.mainhand loot { \
-  "pools": [ \
-    { \
-      "rolls": 1, \
-      "entries": [ \
-        { \
-          "type": "minecraft:item", \
-          "name": "$(id)" \
-        } \
-      ], \
-      "functions": [ \
-        { \
-          "function": "minecraft:set_components", \
-          "components": $(components) \
-        }, \
-        { \
-          "function": "minecraft:set_count", \
-          "count": $(count) \
-        } \
-      ] \
-    } \
-  ] \
-}
+$data modify storage mob_equip:data _.func.equip_if_better.temp.slot set from storage mob_equip:data _.func.equip_if_better.lookup.item_equip_slot_fallback."$(id)"
