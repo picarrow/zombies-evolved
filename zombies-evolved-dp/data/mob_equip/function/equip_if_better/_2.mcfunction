@@ -30,4 +30,4 @@ execute if data storage mob_equip:data _.func.equip_if_better.temp.eval.componen
 execute store result score #_damage_of_old meq._ run data get storage mob_equip:data _.func.equip_if_better.temp.eval.components."minecraft:damage"
 
 # ...
-execute if function mob_equip:equip_if_better/is_better/_ run function mob_equip:equip_if_better/_22
+execute if function mob_equip:equip_if_better/is_better/_ at @s run function mob_equip:equip_if_better/_22

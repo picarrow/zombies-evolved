@@ -8,6 +8,9 @@ function mob_equip:equip_if_better/_221 with storage mob_equip:data _.func.equip
 # Set the slot with the new item to always drop
 data modify entity @s drop_chances.mainhand set value 2f
 
+# Play the item pickup sound
+playsound minecraft:entity.item.pickup hostile @a ~ ~ ~ 1 2
+
 # Prohibit the entity from despawning in the future
 data modify entity @s PersistenceRequired set value 1b
 
