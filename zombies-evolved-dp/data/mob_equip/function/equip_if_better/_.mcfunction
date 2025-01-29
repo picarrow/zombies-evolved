@@ -13,7 +13,7 @@
 
 # Initialize the output, and clear the temp data
 data modify storage mob_equip:data _.func.equip_if_better.out set value {}
-data remove storage mob_equip:data _.func.equip_if_better.temp
+data modify storage mob_equip:data _.func.equip_if_better.temp set value {}
 
 # Determine the slot to be evaluated at
 data modify storage mob_equip:data _.func.equip_if_better.temp.slot set from storage mob_equip:data _.func.equip_if_better.in.new_item.components."minecraft:equippable".slot
@@ -24,4 +24,4 @@ execute unless data storage mob_equip:data _.func.equip_if_better.temp.slot run 
 function mob_equip:equip_if_better/_2
 
 # Clear the temp data
-data remove storage mob_equip:data _.func.equip_if_better.temp
+data modify storage mob_equip:data _.func.equip_if_better.temp set value {}
