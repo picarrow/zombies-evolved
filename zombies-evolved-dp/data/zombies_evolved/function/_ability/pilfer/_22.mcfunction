@@ -1,4 +1,5 @@
 ## AUTHOR : Picarrow
 
-summon minecraft:item ~ ~ ~ {Item:{id:"minecraft:stone"},Motion:[0d,0.3d,0d],PickupDelay:40s,Tags:["zev._dummy"]}
-execute as @e[type=minecraft:item,tag=zev._dummy,distance=..0.00001,limit=1] run function zombies_evolved:_ability/pilfer/_221
+data modify storage zombies_evolved:data _.func."ability.pilfer".temp.item_to_drop_extra.components set value {}
+data modify storage zombies_evolved:data _.func."ability.pilfer".temp.item_to_drop_extra merge from storage zombies_evolved:data _.func."ability.pilfer".temp.item_to_drop
+function zombies_evolved:_ability/pilfer/_221 with storage zombies_evolved:data _.func."ability.pilfer".temp.item_to_drop_extra
